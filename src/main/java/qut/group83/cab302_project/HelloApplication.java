@@ -1,4 +1,5 @@
 package qut.group83.cab302_project;
+import java.sql.Connection;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -17,7 +18,20 @@ public class HelloApplication extends Application {
         stage.show();
     }
 
-    public static void main(String[] args) {
-        launch();
+    public static void main(String[] args) { launch();
+
+        Connection connection = DatabaseConnection.getInstance();
+
+        UserDAO userDAO = new UserDAO();
+        userDAO.createTable();
+
+        //insert new user
+        userDAO.insert(new User("John", "John"));
+
+        // Retrieve a user by username and password
+        User user = userDAO.getByUsernameAndPassword("John", "John");
+
+        userDAO.close();
+
     }
 }
