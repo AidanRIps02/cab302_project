@@ -61,6 +61,15 @@ public class UserDAO {
         return null; // No account found
     }
 
+    public void clearTable() {
+        try {
+            Statement clear = connection.createStatement();
+            clear.executeUpdate("DELETE FROM Users");
+        } catch (SQLException ex) {
+            System.err.println("Error clearing Users table: " + ex.getMessage());
+        }
+    }
+
     public void close() {
         try {
             connection.close();
