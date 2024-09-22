@@ -9,8 +9,14 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/User.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/HelloApplication.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/DatabaseConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/DatabaseConnectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/HelloApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/HelloApplicationTest.java" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +39,17 @@
     &quot;assignee&quot;: &quot;AidanRIps02&quot;
   }
 }</component>
+<<<<<<< Updated upstream
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/AidanRIps02/cab302_project.git",
     "accountId": "9bbab2de-c795-4481-9689-4992faf82070"
+=======
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AidanRIps02/cab302_project.git&quot;,
+    &quot;accountId&quot;: &quot;ed9d004f-3e92-4160-b80d-552c69512145&quot;
+>>>>>>> Stashed changes
   }
 }]]></component>
   <component name="MavenImportPreferences">
