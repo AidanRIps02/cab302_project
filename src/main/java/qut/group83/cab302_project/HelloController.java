@@ -20,6 +20,9 @@ public class HelloController {
         User user = userDAO.getByUsernameAndPassword("John", "John");
 
         userDAO.close();
-        welcomeText.setText(user.toString());
+
+        DummyUserFetcher fetcher = new DummyUserFetcher();
+        DummyUser APIuser = fetcher.fetchDummyUser(100);
+        welcomeText.setText(APIuser.toString());
     }
 }

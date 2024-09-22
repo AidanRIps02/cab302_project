@@ -13,7 +13,7 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        stage.setTitle(toString(APIuser));
         stage.setScene(scene);
         stage.show();
     }
@@ -33,5 +33,12 @@ public class HelloApplication extends Application {
 
         userDAO.close();
 
+
+
+
+        //API TEST SPACE
+        DummyUserFetcher fetcher = new DummyUserFetcher();
+        DummyUser APIuser = fetcher.fetchDummyUser(100);
+        System.out.println(APIuser);
     }
 }
