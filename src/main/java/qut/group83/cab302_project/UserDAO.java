@@ -14,6 +14,7 @@ public class UserDAO {
             Statement createTable = connection.createStatement();
             createTable.execute(
                     "CREATE TABLE IF NOT EXISTS Users ("
+                            + "userId VARCHAR PRIMARY KEY, "
                             + "UserName VARCHAR NOT NULL, "
                             + "Password VARCHAR NOT NULL"
                             + ")"
@@ -26,10 +27,11 @@ public class UserDAO {
     public void insert(User user) {
         try {
             PreparedStatement insertAccount = connection.prepareStatement(
-                    "INSERT INTO Users (UserName, Password) VALUES (?, ?)"
+                    "INSERT INTO Users (userId, userName, password) VALUES (?, ?, ?)"
             );
-            insertAccount.setString(1, user.getUserName());
-            insertAccount.setString(2, user.getPassWord());
+            insertAccount.setString(1, user.getUserId()); // Set userId
+            insertAccount.setString(2, user.getUserName());
+            insertAccount.setString(3, user.getPassWord());
             int rowsInserted = insertAccount.executeUpdate();
         } catch (SQLException ex) {
             System.err.println(ex);
@@ -50,6 +52,7 @@ public class UserDAO {
             // Process the result set
             if (rs.next()) {
                 return new User(
+                        rs.getString("userId"),
                         rs.getString("userName"),
                         rs.getString("passWord")
                 );

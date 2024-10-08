@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e202e056-e6a3-4664-8346-c6dfe2a50c7d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/HomeScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/LoginScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/RegisterPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/WeatherReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/Alarms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/AlarmsDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/UserDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +22,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -60,26 +59,20 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.HelloApplication.executor": "Run",
-    "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Alarms",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/aidan/IdeaProjects/CAB302_Assignment",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.appearance"
+    "settings.editor.selected.configurable": "configurable.group.tools"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="LoginListener.java" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="qut.group83.cab302_project.HelloApplication" />
