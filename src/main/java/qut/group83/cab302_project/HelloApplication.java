@@ -33,19 +33,20 @@ public class HelloApplication extends Application {
         userDAO.createTable();
         alarmsDAO.createTable();
 
+        // Test Stuff
         // Create a new user (if needed)
         //User user = new User("password123", "testUser");
         //userDAO.insert(user);
 
         // Retrieve the user after insertion to get the userId
-        User retrievedUser = userDAO.getByUsernameAndPassword("testUser", "password123");
+        //User retrievedUser = userDAO.getByUsernameAndPassword("testUser", "password123");
 
         // Create a new alarm for the user using the userId
         //Alarms alarm = new Alarms(retrievedUser.getUserId(), 0, "Thunder Storm", "WhoopWhoop", "Severe", "Hurricane warning in effect!", true);
         //alarmsDAO.insert(alarm);
 
         // Retrieve all alarms for the user by userId
-        ResultSet alarmsResultSet = alarmsDAO.getAlarmsByUserId(retrievedUser.getUserId());
+        //ResultSet alarmsResultSet = alarmsDAO.getAlarmsByUserId(retrievedUser.getUserId());
 
         /*
         try {
