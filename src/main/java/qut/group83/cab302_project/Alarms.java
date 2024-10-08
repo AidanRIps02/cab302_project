@@ -10,7 +10,7 @@ public class Alarms extends User {
 
     // Constructor
     public Alarms(String userId, int alarmId, String eventType, String location, String severity, String message, boolean isActive) {
-        super("", ""); // Call the parent (User) constructor with empty values since we're not creating a new user.
+        super("", ""); // Call the parent (User) constructor.
         setUserId(userId);  // Set the existing userId
         this.alarmId = alarmId;
         this.eventType = eventType;
