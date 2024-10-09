@@ -12,17 +12,17 @@ public class HelloController {
     @FXML
     protected void onHelloButtonClick()
     {
-        Connection connection = DatabaseConnection.getInstance();
-
-        UserDAO userDAO = new UserDAO();
-
-        // Retrieve a user by username and password
-        User user = userDAO.getByUsernameAndPassword("John", "John");
-
-        userDAO.close();
-
-        DummyUserFetcher fetcher = new DummyUserFetcher();
-        DummyUser APIuser = fetcher.fetchDummyUser(100);
-        welcomeText.setText(APIuser.toString());
+//        Connection connection = DatabaseConnection.getInstance();
+//
+//        UserDAO userDAO = new UserDAO();
+//
+//        // Retrieve a user by username and password
+//        User user = userDAO.getByUsernameAndPassword("John", "John");
+//
+//        userDAO.close();
+//
+//        DummyUserFetcher fetcher = new DummyUserFetcher();
+//        DummyUser APIuser = fetcher.fetchDummyUser(100);
+        welcomeText.setText("0null00mm");
     }
 }
