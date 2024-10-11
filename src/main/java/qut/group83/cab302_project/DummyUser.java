@@ -3,42 +3,28 @@ package qut.group83.cab302_project;
 import com.google.gson.Gson;
 
 public class DummyUser {
-    private int id;
-    private String firstName;
-    private String lastName;
-    private String email;
-    private String password;
+    public Data[] data;
 
-    public int getId() {
-        return id;
+    public Metadata metadata;
+
+
+
+    public String getGeoHash() {
+        return metadata.forecast_region;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getPassword() {
-        return password;
+    public String getData() {
+        return metadata.forecast_region;
     }
 
     @Override
     public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", firstName=" + firstName +
-                ", lastName=" + lastName +
-                ", email=" + email +
-                ", password=" + password +
+        return "Weather{" +
+                "geoHash=" + metadata.forecast_region +
+                ", data=" + data[0].rain.amount.units +
                 "}";
     }
+
 
     /**
      * Converts a JSON string to a DummyUser object using GSon.
@@ -51,3 +37,4 @@ public class DummyUser {
         return gson.fromJson(json, DummyUser.class);
     }
 }
+

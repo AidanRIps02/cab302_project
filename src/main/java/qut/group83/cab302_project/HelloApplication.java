@@ -20,25 +20,26 @@ public class HelloApplication extends Application {
 
     public static void main(String[] args) { launch();
 
-        Connection connection = DatabaseConnection.getInstance();
-
-        UserDAO userDAO = new UserDAO();
-        userDAO.createTable();
-
-        //insert new user
-        userDAO.insert(new User("John", "John"));
-
-        // Retrieve a user by username and password
-        User user = userDAO.getByUsernameAndPassword("John", "John");
-
-        userDAO.close();
+//        Connection connection = DatabaseConnection.getInstance();
+//
+//        UserDAO userDAO = new UserDAO();
+//        userDAO.createTable();
+//
+//        //insert new user
+//        userDAO.insert(new User("John", "John"));
+//
+//        // Retrieve a user by username and password
+//        User user = userDAO.getByUsernameAndPassword("John", "John");
+//
+//        userDAO.close();
 
 
 
 
         //API TEST SPACE
-        DummyUserFetcher fetcher = new DummyUserFetcher();
-        DummyUser APIuser = fetcher.fetchDummyUser(100);
+        WeatherFetcher fetcher = new WeatherFetcher();
+        DummyUser APIuser = fetcher.fetchDummyUser("qgz1nj");
         System.out.println(APIuser);
+        System.out.println("we got this far");
     }
 }
