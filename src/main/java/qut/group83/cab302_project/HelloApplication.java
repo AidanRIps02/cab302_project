@@ -12,7 +12,7 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        Scene scene = new Scene(fxmlLoader.load(), 640, 320);
         stage.setTitle("APITest");
         stage.setScene(scene);
         stage.show();
@@ -38,8 +38,11 @@ public class HelloApplication extends Application {
 
         //API TEST SPACE
         WeatherFetcher fetcher = new WeatherFetcher();
-        DummyUser APIuser = fetcher.fetchDummyUser("qgz1nj");
+        //BRISBANE r7hs1z
+        //ALICE SPRINGS qgz1nj
+        //SIMPSON DESERT r50z9g
+
+        Weather APIuser = fetcher.fetchCurrentWeatherForecast("r7hs1z");
         System.out.println(APIuser);
-        System.out.println("we got this far");
     }
 }

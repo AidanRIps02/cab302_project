@@ -15,14 +15,14 @@ public class WeatherFetcher {
      * @param geohash the GeoHash of the location to fetch
      * @return the DummyUser object
      */
-    public DummyUser fetchDummyUser(String geohash) {
+    public Weather fetchCurrentWeatherForecast(String geohash) {
         String url = "https://api.weather.bom.gov.au/v1/locations/" + geohash + "/forecasts/daily";
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(url))
                 .build();
         try {
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-            return DummyUser.fromJson(response.body());
+            return Weather.fromJson(response.body());
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("working");

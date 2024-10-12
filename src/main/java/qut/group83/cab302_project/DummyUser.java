@@ -20,8 +20,10 @@ public class DummyUser {
     @Override
     public String toString() {
         return "Weather{" +
-                "geoHash=" + metadata.forecast_region +
-                ", data=" + data[0].rain.amount.units +
+                "forcast region=" + metadata.forecast_region +
+                ", units=" + data[0].rain.amount.units +
+                ", minimum rain=" + data[0].rain.amount.min +
+                ", maximum rain=" + data[0].rain.amount.max +
                 "}";
     }
 

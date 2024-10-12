@@ -5,6 +5,8 @@
 <?import javafx.scene.layout.VBox?>
 
 <?import javafx.scene.control.Button?>
+
+
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="qut.group83.cab302_project.HelloController">
   <padding>
@@ -13,5 +15,5 @@
 
   <Label fx:id="welcomeText"/>
   <Button text="Hello!" onAction="#onHelloButtonClick"/>
-  <Button text="Test!" onAction="#onHelloButtonClick"/>
+  <Button text="APITest!" onAction="#onHelloButtonClick"/>
 </VBox>
