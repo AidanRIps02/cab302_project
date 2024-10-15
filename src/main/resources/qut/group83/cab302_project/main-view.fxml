@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      xmlns="http://javafx.com/javafx"
+      fx:controller="qut.group83.cab302_project.MainController"
+      alignment="CENTER"
+      spacing="20">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <VBox alignment="CENTER"
+          spacing="0.0">
+
+        <Button fx:id="refreshButton" text="Refresh" onAction="#onRefreshButtonClick"/>
+
+    </VBox>
+
+    <HBox VBox.vgrow="ALWAYS"
+          spacing="20.0"
+          alignment="CENTER">
+            <VBox alignment="CENTER"
+                  spacing="0.0"
+                  fx:id="day1">
+                <padding>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                </padding>
+
+                    <Label fx:id="welcomeText1"/>
+                    <Button text="Hello!"/>
+                    <Button fx:id="nextButton1" text="working!" onAction="#onWorkingButtonClick"/>
+                </VBox>
+        <VBox alignment="CENTER"
+              spacing="0.0"
+              fx:id="day2">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+
+            <Label fx:id="welcomeText2"/>
+            <Button text="Hello!"/>
+            <Button fx:id="nextButton2" text="working!" onAction="#onWorkingButtonClick"/>
+        </VBox>
+        <VBox alignment="CENTER"
+              spacing="0.0"
+              fx:id="day3">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+
+            <Label fx:id="welcomeText3"/>
+            <Button text="Hello!"/>
+            <Button fx:id="nextButton3" text="working!" onAction="#onWorkingButtonClick"/>
+        </VBox>
+        <VBox alignment="CENTER"
+              spacing="0.0"
+              fx:id="day4">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+
+            <Label fx:id="welcomeText4"/>
+            <Button text="Hello!"/>
+            <Button fx:id="nextButton4" text="working!" onAction="#onWorkingButtonClick"/>
+        </VBox>
+        <VBox alignment="CENTER"
+              spacing="0.0"
+              fx:id="day5">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+
+            <Label fx:id="welcomeText5"/>
+            <Button text="Hello!"/>
+            <Button fx:id="nextButton5" text="working!" onAction="#onWorkingButtonClick"/>
+        </VBox>
+        <VBox alignment="CENTER"
+              spacing="0.0"
+              fx:id="day6">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+
+            <Label fx:id="welcomeText6"/>
+            <Button text="Hello!"/>
+            <Button fx:id="nextButton6" text="working!" onAction="#onWorkingButtonClick"/>
+        </VBox>
+        <VBox alignment="CENTER"
+              spacing="0.0"
+              fx:id="day7">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+
+            <Label fx:id="welcomeText7"/>
+            <Button text="Hello!"/>
+            <Button fx:id="nextButton7" text="working!" onAction="#onWorkingButtonClick"/>
+        </VBox>
+    </HBox>
+    <VBox alignment="CENTER"
+          spacing="0.0">
+
+        <Label fx:id="metaDataText" text="Data Not Available"/>
+    </VBox>
+</VBox>
+
+
+

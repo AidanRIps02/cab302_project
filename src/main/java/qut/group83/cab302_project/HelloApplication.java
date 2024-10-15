@@ -9,10 +9,17 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class HelloApplication extends Application {
+
+    public static final int WIDTH = 720;
+    public static final int HEIGHT = 480;
+    public static Weather APIuser;
+
+
+
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 640, 320);
+        Scene scene = new Scene(fxmlLoader.load(), WIDTH, HEIGHT);
         stage.setTitle("APITest");
         stage.setScene(scene);
         stage.show();
@@ -42,7 +49,7 @@ public class HelloApplication extends Application {
         //ALICE SPRINGS qgz1nj
         //SIMPSON DESERT r50z9g
 
-        Weather APIuser = fetcher.fetchCurrentWeatherForecast("r7hs1z");
+        APIuser = fetcher.fetchCurrentWeatherForecast("r7hs1z");
         System.out.println(APIuser);
     }
 }

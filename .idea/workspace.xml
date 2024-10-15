@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e202e056-e6a3-4664-8346-c6dfe2a50c7d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/DummyUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/DummyUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/WeatherFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/WeatherFetcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/Weather.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/qut/group83/cab302_project/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/qut/group83/cab302_project/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -69,7 +70,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "API",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/aidan/IdeaProjects/cab302_project",
+    "last_opened_file_path": "C:/Users/aidan/IdeaProjects/cab302_project/src/main/resources/qut/group83/cab302_project",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -79,10 +80,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\aidan\IdeaProjects\cab302_project\src\main\resources\qut\group83\cab302_project" />
       <recent name="C:\Users\aidan\IdeaProjects\cab302_project\src\main\java\qut\group83\cab302_project" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="qut.group83.cab302_project" />
     </key>
   </component>
   <component name="RunManager">
