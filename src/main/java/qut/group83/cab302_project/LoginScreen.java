@@ -1,41 +1,91 @@
 package qut.group83.cab302_project;
 
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-import java.nio.charset.StandardCharsets;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.Base64;
-
 public class LoginScreen {
-
     public LoginScreen(Stage primaryStage) {
-        VBox root = new VBox(10);
+        // Left side - Logo and Title
+        VBox leftPane = new VBox();
+        leftPane.setAlignment(Pos.CENTER); // Center the text vertically and horizontally
+        leftPane.setPadding(new Insets(20)); // Reduce padding for better control
+        leftPane.setStyle("-fx-background-color: #1E90FF;"); // Blue color
 
+    // Set a preferred size for the VBox to prevent it from overflowing
+        leftPane.setPrefWidth(250); // Set a reasonable width for the left pane
+        leftPane.setPrefHeight(400); // Set height based on your window size
 
-        Label userLabel = new Label("User:");
-        TextField userField = new TextField();
-        Label passwordLabel = new Label("Password:");
+    // Title (Text node)
+        Text title = new Text("Welcome to the Weather Forest Tracker");
+        title.setFont(Font.font("Arial", FontWeight.BOLD, 20)); // Set font size and weight
+        title.setFill(Color.WHITE); // Set text color to black
+
+    // Add the title to the leftPane
+        leftPane.getChildren().add(title);
+
+        // Right side - Login Form
+        VBox rightPane = new VBox(10);
+        rightPane.setAlignment(Pos.CENTER);
+        rightPane.setPadding(new Insets(20));
+
+        // Username label and text field
+        Label usernameLabel = new Label("Username");
+        TextField usernameField = new TextField();
+        usernameField.setPromptText("Enter your username");
+
+        // Password label and password field
+        Label passwordLabel = new Label("Password");
         PasswordField passwordField = new PasswordField();
+        passwordField.setPromptText("Enter your password");
+
+        // Login button
         Button loginButton = new Button("Login");
-        Button signUpButton = new Button("Sign Up");
-        Button homeButton = new Button("Home");  // Add Home button
+        loginButton.setStyle("-fx-background-color: #1E90FF; -fx-text-fill: white;");
 
-        Label loginFailedLabel = new Label();
-        loginFailedLabel.setStyle("-fx-text-fill: red;");
+        // Signup link
+        Label signUpLabel = new Label("Not a user? ");
+        Button signUpButton = new Button("Sign up!");
+        signUpButton.setStyle("-fx-background-color: transparent; -fx-text-fill: blue; -fx-underline: true;");
 
-        root.getChildren().addAll(userLabel, userField, passwordLabel, passwordField, loginButton, signUpButton, homeButton, loginFailedLabel);
+        HBox signUpBox = new HBox(5, signUpLabel, signUpButton);
+        signUpBox.setAlignment(Pos.CENTER);
+
+        // Add elements to the right pane
+        rightPane.getChildren().addAll(usernameLabel, usernameField, passwordLabel, passwordField, loginButton, signUpBox);
+
+        // Main layout: HBox for left and right panes
+        HBox mainLayout = new HBox();
+        mainLayout.getChildren().addAll(leftPane, rightPane);
+
+        // Root layout for error messages
+        VBox root = new VBox(10);
+        root.setAlignment(Pos.CENTER);
+        root.getChildren().add(mainLayout);
+
+        Scene scene = new Scene(root, 600, 400);
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("Login - Weather Forest Tracker");
+        primaryStage.show();
 
         // Implement login logic
         loginButton.setOnAction(e -> {
-            if (validateLogin(userField.getText(), passwordField.getText())) {
-                root.getChildren().remove(loginFailedLabel);  // Clear error on success
-                new HomeScreen(primaryStage); // Navigate to home page
+            if (validateLogin(usernameField.getText(), passwordField.getText())) {
+                new HomeScreen(primaryStage); // Navigate to the home page on successful login
             } else {
-                loginFailedLabel.setText("Login Failed: Invalid username or password");
+                Label loginFailedLabel = new Label("Login Failed: Invalid username or password");
                 if (!root.getChildren().contains(loginFailedLabel)) {
                     root.getChildren().add(loginFailedLabel);
                 }
@@ -44,29 +94,10 @@ public class LoginScreen {
 
         // Navigate to sign-up page
         signUpButton.setOnAction(e -> new RegisterPage(primaryStage));
-
-        // Navigate to home page directly when Home button is clicked
-        homeButton.setOnAction(e -> new HomeScreen(primaryStage));
-
-        Scene scene = new Scene(root, 400, 300);
-        primaryStage.setScene(scene);
-        primaryStage.setTitle("Login");
     }
 
     private boolean validateLogin(String username, String password) {
-        // Placeholder for actual hashed password comparison
-        String storedHashedPassword = "rpbJioJqUGRVDiSXT2fjhGFlhKvklw4y2oZ9vU2zMFo="; // Example hashed password ("pass")
-        try {
-            return "user".equals(username) && storedHashedPassword.equals(hashPassword(password));
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-            return false;
-        }
-    }
-
-    private String hashPassword(String password) throws NoSuchAlgorithmException {
-        MessageDigest md = MessageDigest.getInstance("SHA-256");
-        byte[] hash = md.digest(password.getBytes(StandardCharsets.UTF_8));
-        return Base64.getEncoder().encodeToString(hash);
+        // Placeholder for actual authentication logic
+        return "user".equals(username) && "pass".equals(password);
     }
 }
