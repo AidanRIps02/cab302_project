@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< Updated upstream
-    <list default="true" id="e202e056-e6a3-4664-8346-c6dfe2a50c7d" name="Changes" comment="" />
-=======
     <list default="true" id="e202e056-e6a3-4664-8346-c6dfe2a50c7d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/HomeScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/LoginScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/WeatherReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/WeatherReport.java" afterDir="false" />
     </list>
->>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
