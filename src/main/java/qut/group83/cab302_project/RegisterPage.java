@@ -1,35 +1,39 @@
 package qut.group83.cab302_project;
 
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class RegisterPage {
+
     public RegisterPage(Stage primaryStage) {
         VBox root = new VBox(10);
 
-        TextField usernameField = new TextField();
-        TextField passwordField = new TextField();
-        TextField emailField = new TextField();
-        Button submitButton = new Button("Register");
+        Label userLabel = new Label("Username:");
+        TextField userField = new TextField();
+        Label passwordLabel = new Label("Password:");
+        PasswordField passwordField = new PasswordField();
+        Button registerButton = new Button("Register");
+        Button backButton = new Button("Back");
 
-        root.getChildren().addAll(
-                new Label("Username:"),
-                usernameField,
-                new Label("Password:"),
-                passwordField,
-                submitButton
-        );
+        root.getChildren().addAll(userLabel, userField, passwordLabel, passwordField, registerButton, backButton);
 
-        submitButton.setOnAction(e -> {
-            // Here you can add your registration logic
-            primaryStage.setScene(primaryStage.getScene()); // Optionally navigate back or elsewhere
+        // Navigate back to login page on pressing "Back"
+        backButton.setOnAction(e -> new LoginScreen(primaryStage));
+
+        // Implement registration logic
+        registerButton.setOnAction(e -> {
+            // Add logic for registering new user
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Registration");
+            alert.setHeaderText(null);
+            alert.setContentText("Registration successful! Returning to login page.");
+            alert.showAndWait();
+            new LoginScreen(primaryStage);
         });
 
-        Scene scene = new Scene(root, 300, 300);
+        Scene scene = new Scene(root, 400, 250);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Register");
     }
