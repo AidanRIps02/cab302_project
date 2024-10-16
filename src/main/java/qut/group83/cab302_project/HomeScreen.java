@@ -41,7 +41,7 @@ public class HomeScreen {
         southPanel.getChildren().add(setAlertsButton);
         root.setBottom(southPanel);
 
-        Scene scene = new Scene(root, 300, 300);  // Adjusted scene size for better layout view
+        Scene scene = new Scene(root, 600, 400);  // Adjusted scene size for better layout view
         primaryStage.setScene(scene);
         primaryStage.setTitle("Home Page");
     }

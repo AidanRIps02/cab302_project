@@ -20,7 +20,7 @@ public class WeatherReport extends Stage {
                 new Label("Humidity Level: 45%")
         );
 
-        Scene scene = new Scene(root, 400, 300);
+        Scene scene = new Scene(root, 600, 400);
         setScene(scene);
         show();
     }
