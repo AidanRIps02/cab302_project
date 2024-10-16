@@ -5,6 +5,7 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
 <?import javafx.geometry.Insets?>
 
 <VBox xmlns:fx="http://javafx.com/fxml"
@@ -28,25 +29,42 @@
           alignment="CENTER">
             <VBox alignment="CENTER"
                   spacing="0.0"
-                  fx:id="day1">
+                  fx:id="day1"
+                  style="-fx-background-color: lightgray;">
                 <padding>
                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
-
-                    <Label fx:id="welcomeText1"/>
-                    <Button text="Hello!"/>
-                    <Button fx:id="nextButton1" text="working!" onAction="#onWorkingButtonClick"/>
+                <GridPane hgap="5.0" vgap="5.0">
+                    <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
+                    <Label text="Max Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="1" textAlignment="RIGHT"/>
+                    <Label text="Min Rain:" GridPane.columnIndex="0" GridPane.rowIndex="2" textAlignment="RIGHT"/>
+                    <Label text="Max Rain:" GridPane.columnIndex="0" GridPane.rowIndex="3" textAlignment="RIGHT"/>
+                    <Label fx:id="day1MinTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                    <Label fx:id="day1MaxTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                    <Label fx:id="day1MinRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                    <Label fx:id="day1MaxRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                    <Button fx:id="nextButton1" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+                </GridPane>
                 </VBox>
         <VBox alignment="CENTER"
               spacing="0.0"
-              fx:id="day2">
+              fx:id="day2"
+              style="-fx-background-color: lightblue;">
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
 
-            <Label fx:id="welcomeText2"/>
-            <Button text="Hello!"/>
-            <Button fx:id="nextButton2" text="working!" onAction="#onWorkingButtonClick"/>
+            <GridPane hgap="5.0" vgap="5.0">
+                <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
+                <Label text="Max Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="1" textAlignment="RIGHT"/>
+                <Label text="Min Rain:" GridPane.columnIndex="0" GridPane.rowIndex="2" textAlignment="RIGHT"/>
+                <Label text="Max Rain:" GridPane.columnIndex="0" GridPane.rowIndex="3" textAlignment="RIGHT"/>
+                <Label fx:id="day2MinTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                <Label fx:id="day2MaxTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <Label fx:id="day2MinRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                <Label fx:id="day2MaxRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                <Button fx:id="nextButton2" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+            </GridPane>
         </VBox>
         <VBox alignment="CENTER"
               spacing="0.0"
@@ -55,9 +73,17 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
 
-            <Label fx:id="welcomeText3"/>
-            <Button text="Hello!"/>
-            <Button fx:id="nextButton3" text="working!" onAction="#onWorkingButtonClick"/>
+            <GridPane hgap="5.0" vgap="5.0">
+                <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
+                <Label text="Max Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="1" textAlignment="RIGHT"/>
+                <Label text="Min Rain:" GridPane.columnIndex="0" GridPane.rowIndex="2" textAlignment="RIGHT"/>
+                <Label text="Max Rain:" GridPane.columnIndex="0" GridPane.rowIndex="3" textAlignment="RIGHT"/>
+                <Label fx:id="day3MinTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                <Label fx:id="day3MaxTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <Label fx:id="day3MinRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                <Label fx:id="day3MaxRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                <Button fx:id="nextButton3" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+            </GridPane>
         </VBox>
         <VBox alignment="CENTER"
               spacing="0.0"
@@ -66,9 +92,17 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
 
-            <Label fx:id="welcomeText4"/>
-            <Button text="Hello!"/>
-            <Button fx:id="nextButton4" text="working!" onAction="#onWorkingButtonClick"/>
+            <GridPane hgap="5.0" vgap="5.0">
+                <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
+                <Label text="Max Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="1" textAlignment="RIGHT"/>
+                <Label text="Min Rain:" GridPane.columnIndex="0" GridPane.rowIndex="2" textAlignment="RIGHT"/>
+                <Label text="Max Rain:" GridPane.columnIndex="0" GridPane.rowIndex="3" textAlignment="RIGHT"/>
+                <Label fx:id="day4MinTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                <Label fx:id="day4MaxTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <Label fx:id="day4MinRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                <Label fx:id="day4MaxRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                <Button fx:id="nextButton4" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+            </GridPane>
         </VBox>
         <VBox alignment="CENTER"
               spacing="0.0"
@@ -77,9 +111,17 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
 
-            <Label fx:id="welcomeText5"/>
-            <Button text="Hello!"/>
-            <Button fx:id="nextButton5" text="working!" onAction="#onWorkingButtonClick"/>
+            <GridPane hgap="5.0" vgap="5.0">
+                <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
+                <Label text="Max Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="1" textAlignment="RIGHT"/>
+                <Label text="Min Rain:" GridPane.columnIndex="0" GridPane.rowIndex="2" textAlignment="RIGHT"/>
+                <Label text="Max Rain:" GridPane.columnIndex="0" GridPane.rowIndex="3" textAlignment="RIGHT"/>
+                <Label fx:id="day5MinTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                <Label fx:id="day5MaxTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <Label fx:id="day5MinRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                <Label fx:id="day5MaxRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                <Button fx:id="nextButton5" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+            </GridPane>
         </VBox>
         <VBox alignment="CENTER"
               spacing="0.0"
@@ -88,9 +130,17 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
 
-            <Label fx:id="welcomeText6"/>
-            <Button text="Hello!"/>
-            <Button fx:id="nextButton6" text="working!" onAction="#onWorkingButtonClick"/>
+            <GridPane hgap="5.0" vgap="5.0">
+                <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
+                <Label text="Max Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="1" textAlignment="RIGHT"/>
+                <Label text="Min Rain:" GridPane.columnIndex="0" GridPane.rowIndex="2" textAlignment="RIGHT"/>
+                <Label text="Max Rain:" GridPane.columnIndex="0" GridPane.rowIndex="3" textAlignment="RIGHT"/>
+                <Label fx:id="day6MinTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                <Label fx:id="day6MaxTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <Label fx:id="day6MinRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                <Label fx:id="day6MaxRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                <Button fx:id="nextButton6" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+            </GridPane>
         </VBox>
         <VBox alignment="CENTER"
               spacing="0.0"
@@ -99,9 +149,17 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
 
-            <Label fx:id="welcomeText7"/>
-            <Button text="Hello!"/>
-            <Button fx:id="nextButton7" text="working!" onAction="#onWorkingButtonClick"/>
+            <GridPane hgap="5.0" vgap="5.0">
+                <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
+                <Label text="Max Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="1" textAlignment="RIGHT"/>
+                <Label text="Min Rain:" GridPane.columnIndex="0" GridPane.rowIndex="2" textAlignment="RIGHT"/>
+                <Label text="Max Rain:" GridPane.columnIndex="0" GridPane.rowIndex="3" textAlignment="RIGHT"/>
+                <Label fx:id="day7MinTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                <Label fx:id="day7MaxTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <Label fx:id="day7MinRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                <Label fx:id="day7MaxRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                <Button fx:id="nextButton7" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+            </GridPane>
         </VBox>
     </HBox>
     <VBox alignment="CENTER"

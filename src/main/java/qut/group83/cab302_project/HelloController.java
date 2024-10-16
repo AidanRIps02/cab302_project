@@ -35,7 +35,17 @@ public class HelloController {
 //
 //        DummyUserFetcher fetcher = new DummyUserFetcher();
 //        DummyUser APIuser = fetcher.fetchDummyUser(100);
-        welcomeText.setText("Hello World!");
+
+//        //API TEST SPACE
+//        WeatherFetcher fetcher = new WeatherFetcher();
+//        //BRISBANE r7hs1z
+//        //ALICE SPRINGS qgz1nj
+//        //SIMPSON DESERT r50z9g
+//
+//        Weather APIuser = fetcher.fetchCurrentWeatherForecast("r7hs1z");
+//        System.out.println(APIuser);
+//
+//        welcomeText.setText("Hello World!");
     }
 
     @FXML

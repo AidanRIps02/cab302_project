@@ -10,8 +10,8 @@ import java.io.IOException;
 
 public class HelloApplication extends Application {
 
-    public static final int WIDTH = 720;
-    public static final int HEIGHT = 480;
+    public static final int WIDTH = 1200;
+    public static final int HEIGHT = 640;
     public static Weather APIuser;
 
 
@@ -49,7 +49,7 @@ public class HelloApplication extends Application {
         //ALICE SPRINGS qgz1nj
         //SIMPSON DESERT r50z9g
 
-        APIuser = fetcher.fetchCurrentWeatherForecast("r7hs1z");
+        APIuser = fetcher.fetchCurrentWeatherForecast("qgz1nj");
         System.out.println(APIuser);
     }
 }

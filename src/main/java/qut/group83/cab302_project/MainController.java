@@ -22,6 +22,16 @@ public class MainController {
 
     @FXML
     private Label welcomeText1;
+
+    @FXML
+    private Label day1MinTemp;
+    @FXML
+    private Label day1MaxTemp;
+    @FXML
+    private Label day1MinRain;
+    @FXML
+    private Label day1MaxRain;
+
     @FXML
     private Label welcomeText2;
     @FXML
@@ -59,7 +69,7 @@ public class MainController {
         //ALICE SPRINGS qgz1nj
         //SIMPSON DESERT r50z9g
 
-        APIuser = fetcher.fetchCurrentWeatherForecast("r7hs1z");
+        APIuser = fetcher.fetchCurrentWeatherForecast("r50z9g");
         //System.out.println(APIuser);
 
         String outputString = APIuser.toString();
@@ -76,7 +86,9 @@ public class MainController {
         String set4 = outputStringSplit[7];
         String set5 = outputStringSplit[9];
         String set6 = outputStringSplit[11];
-        String set7 = outputStringSplit[13];
+        if(outputStringSplit.length == 14){
+            String set7 = outputStringSplit[13];
+        }
 
         String set1Extended = outputStringSplit[2];
         String set2Extended = outputStringSplit[4];
@@ -84,8 +96,15 @@ public class MainController {
         String set4Extended = outputStringSplit[8];
         String set5Extended = outputStringSplit[10];
         String set6Extended = outputStringSplit[12];
-        String set7Extended = outputStringSplit[14];
+        if(outputStringSplit.length == 14){
+            String set7Extended = outputStringSplit[14];
+        }
 
+
+        day1MinTemp.setText("4");
+        day1MaxTemp.setText("4");
+        day1MinRain.setText("4");
+        day1MaxRain.setText("4");
 
         //welcomeText7.setText(APIuser.toString());
         metaDataText.setText(metaData);

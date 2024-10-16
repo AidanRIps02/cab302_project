@@ -19,10 +19,11 @@ public class Weather {
 
     @Override
     public String toString() {
-        return  "metaData{" +
+        String outputString =  "metaData{" +
                 "forecastRegion=" + metadata.forecast_region +
                 ",forecastIssueTime=" + metadata.issue_time +
                 ",nextExpectedForecastIssueTime=" + metadata.next_issue_time +
+                ",forcastNumber=" + data.length +
                 "}" +
                 "\nSet1{" +
                 "forecastDate=" + data[1].date +
@@ -71,15 +72,33 @@ public class Weather {
                 ",minimumTemperature=" + data[6].temp_min +
                 ",maximumTemperature=" + data[6].temp_max +
                 "}\n" +
-                data[6].extended_text +
-                "\nSet7{" +
-                "forecastDate=" + data[7].date +
-                ",minimumRain=" + data[7].rain.amount.min +
-                ",maximumRain=" + data[7].rain.amount.max +
-                ",minimumTemperature=" + data[7].temp_min +
-                ",maximumTemperature=" + data[7].temp_max +
-                "}\n" +
-                data[7].extended_text;
+                data[6].extended_text;
+
+                if(data.length > 7){
+                    outputString += "\nSet7{" +
+                            "forecastDate=" + data[7].date +
+                            ",minimumRain=" + data[7].rain.amount.min +
+                            ",maximumRain=" + data[7].rain.amount.max +
+                            ",minimumTemperature=" + data[7].temp_min +
+                            ",maximumTemperature=" + data[7].temp_max +
+                            "}\n" +
+                            data[7].extended_text;
+                }
+                else
+                {
+                    outputString += "\nSet7{" +
+                            "forecastDate=" + null +
+                            ",minimumRain=" + null +
+                            ",maximumRain=" + null +
+                            ",minimumTemperature=" + null +
+                            ",maximumTemperature=" + null +
+                            "}\n" +
+                            null;
+                }
+
+
+
+        return outputString;
     }
 
 
