@@ -23,6 +23,7 @@ public class MainController {
     @FXML
     private Label welcomeText1;
 
+    //day1
     @FXML
     private Label day1MinTemp;
     @FXML
@@ -31,6 +32,66 @@ public class MainController {
     private Label day1MinRain;
     @FXML
     private Label day1MaxRain;
+
+    //day2
+    @FXML
+    private Label day2MinTemp;
+    @FXML
+    private Label day2MaxTemp;
+    @FXML
+    private Label day2MinRain;
+    @FXML
+    private Label day2MaxRain;
+
+    //day3
+    @FXML
+    private Label day3MinTemp;
+    @FXML
+    private Label day3MaxTemp;
+    @FXML
+    private Label day3MinRain;
+    @FXML
+    private Label day3MaxRain;
+
+    //day4
+    @FXML
+    private Label day4MinTemp;
+    @FXML
+    private Label day4MaxTemp;
+    @FXML
+    private Label day4MinRain;
+    @FXML
+    private Label day4MaxRain;
+
+    //day5
+    @FXML
+    private Label day5MinTemp;
+    @FXML
+    private Label day5MaxTemp;
+    @FXML
+    private Label day5MinRain;
+    @FXML
+    private Label day5MaxRain;
+
+    //day6
+    @FXML
+    private Label day6MinTemp;
+    @FXML
+    private Label day6MaxTemp;
+    @FXML
+    private Label day6MinRain;
+    @FXML
+    private Label day6MaxRain;
+
+    //day7
+    @FXML
+    private Label day7MinTemp;
+    @FXML
+    private Label day7MaxTemp;
+    @FXML
+    private Label day7MinRain;
+    @FXML
+    private Label day7MaxRain;
 
     @FXML
     private Label welcomeText2;

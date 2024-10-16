@@ -68,7 +68,8 @@
         </VBox>
         <VBox alignment="CENTER"
               spacing="0.0"
-              fx:id="day3">
+              fx:id="day3"
+              style="-fx-background-color: lightgray;">
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
@@ -87,7 +88,8 @@
         </VBox>
         <VBox alignment="CENTER"
               spacing="0.0"
-              fx:id="day4">
+              fx:id="day4"
+              style="-fx-background-color: lightblue;">
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
@@ -106,7 +108,8 @@
         </VBox>
         <VBox alignment="CENTER"
               spacing="0.0"
-              fx:id="day5">
+              fx:id="day5"
+              style="-fx-background-color: lightgray;">
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
@@ -125,7 +128,8 @@
         </VBox>
         <VBox alignment="CENTER"
               spacing="0.0"
-              fx:id="day6">
+              fx:id="day6"
+              style="-fx-background-color: lightblue;">
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
@@ -144,7 +148,8 @@
         </VBox>
         <VBox alignment="CENTER"
               spacing="0.0"
-              fx:id="day7">
+              fx:id="day7"
+              style="-fx-background-color: lightgray;">
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
