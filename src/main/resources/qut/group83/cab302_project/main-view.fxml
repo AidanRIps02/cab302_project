@@ -8,6 +8,7 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.geometry.Insets?>
 
+
 <VBox xmlns:fx="http://javafx.com/fxml"
       xmlns="http://javafx.com/javafx"
       fx:controller="qut.group83.cab302_project.MainController"
@@ -27,7 +28,7 @@
     <HBox VBox.vgrow="ALWAYS"
           spacing="20.0"
           alignment="CENTER">
-            <VBox alignment="CENTER"
+            <VBox alignment="BASELINE_CENTER"
                   spacing="0.0"
                   fx:id="day1"
                   style="-fx-background-color: lightgray;"
@@ -36,6 +37,19 @@
                 <padding>
                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
+                <VBox   alignment="CENTER"
+                        spacing="0.0"
+                        style="-fx-background-color: lightblue;"
+                        minWidth="150"
+                        maxWidth="150"
+                        minHeight="150"
+                        maxHeight="150">
+                    <Label fx:id="day1Temp"
+                           text="Current Temperature Unavailable"
+                    >
+
+                    </Label>
+                </VBox>
                 <GridPane hgap="5.0" vgap="5.0">
                     <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
                     <Label text="Max Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="1" textAlignment="RIGHT"/>
@@ -48,7 +62,7 @@
                     <Button fx:id="nextButton1" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
                 </GridPane>
                 </VBox>
-        <VBox alignment="CENTER"
+        <VBox alignment="BASELINE_CENTER"
               spacing="0.0"
               fx:id="day2"
               style="-fx-background-color: lightblue;"
@@ -57,7 +71,16 @@
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
-
+            <VBox
+                    alignment="CENTER"
+                    spacing="0.0"
+                    fx:id="day2Temp"
+                    style="-fx-background-color: lightgrey;"
+                    minWidth="150"
+                    maxWidth="150"
+                    minHeight="150"
+                    maxHeight="150">
+            </VBox>
             <GridPane hgap="5.0" vgap="5.0">
                 <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
                 <Label text="Max Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="1" textAlignment="RIGHT"/>
@@ -70,7 +93,7 @@
                 <Button fx:id="nextButton2" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
             </GridPane>
         </VBox>
-        <VBox alignment="CENTER"
+        <VBox alignment="BASELINE_CENTER"
               spacing="0.0"
               fx:id="day3"
               style="-fx-background-color: lightgray;"
@@ -79,7 +102,16 @@
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
-
+            <VBox
+                    alignment="CENTER"
+                    spacing="0.0"
+                    fx:id="day3Temp"
+                    style="-fx-background-color: lightblue;"
+                    minWidth="150"
+                    maxWidth="150"
+                    minHeight="150"
+                    maxHeight="150">
+            </VBox>
             <GridPane hgap="5.0" vgap="5.0">
                 <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
                 <Label text="Max Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="1" textAlignment="RIGHT"/>
@@ -92,7 +124,7 @@
                 <Button fx:id="nextButton3" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
             </GridPane>
         </VBox>
-        <VBox alignment="CENTER"
+        <VBox alignment="BASELINE_CENTER"
               spacing="0.0"
               fx:id="day4"
               style="-fx-background-color: lightblue;"
@@ -101,7 +133,16 @@
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
-
+            <VBox
+                    alignment="CENTER"
+                    spacing="0.0"
+                    fx:id="day4Temp"
+                    style="-fx-background-color: lightgrey;"
+                    minWidth="150"
+                    maxWidth="150"
+                    minHeight="150"
+                    maxHeight="150">
+            </VBox>
             <GridPane hgap="5.0" vgap="5.0">
                 <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
                 <Label text="Max Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="1" textAlignment="RIGHT"/>
@@ -114,7 +155,7 @@
                 <Button fx:id="nextButton4" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
             </GridPane>
         </VBox>
-        <VBox alignment="CENTER"
+        <VBox alignment="BASELINE_CENTER"
               spacing="0.0"
               fx:id="day5"
               style="-fx-background-color: lightgray;"
@@ -123,7 +164,16 @@
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
-
+            <VBox
+                    alignment="CENTER"
+                    spacing="0.0"
+                    fx:id="day5Temp"
+                    style="-fx-background-color: lightblue;"
+                    minWidth="150"
+                    maxWidth="150"
+                    minHeight="150"
+                    maxHeight="150">
+            </VBox>
             <GridPane hgap="5.0" vgap="5.0">
                 <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
                 <Label text="Max Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="1" textAlignment="RIGHT"/>
@@ -136,7 +186,7 @@
                 <Button fx:id="nextButton5" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
             </GridPane>
         </VBox>
-        <VBox alignment="CENTER"
+        <VBox alignment="BASELINE_CENTER"
               spacing="0.0"
               fx:id="day6"
               style="-fx-background-color: lightblue;"
@@ -145,7 +195,16 @@
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
-
+            <VBox
+                    alignment="CENTER"
+                    spacing="0.0"
+                    fx:id="day6Temp"
+                    style="-fx-background-color: lightgrey;"
+                    minWidth="150"
+                    maxWidth="150"
+                    minHeight="150"
+                    maxHeight="150">
+            </VBox>
             <GridPane hgap="5.0" vgap="5.0">
                 <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
                 <Label text="Max Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="1" textAlignment="RIGHT"/>
@@ -158,7 +217,7 @@
                 <Button fx:id="nextButton6" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
             </GridPane>
         </VBox>
-        <VBox alignment="CENTER"
+        <VBox alignment="BASELINE_CENTER"
               spacing="0.0"
               fx:id="day7"
               style="-fx-background-color: lightgray;"
@@ -167,7 +226,16 @@
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
-
+            <VBox
+                    alignment="CENTER"
+                    spacing="0.0"
+                    fx:id="day7Temp"
+                    style="-fx-background-color: lightblue;"
+                    minWidth="150"
+                    maxWidth="150"
+                    minHeight="150"
+                    maxHeight="150">
+            </VBox>
             <GridPane hgap="5.0" vgap="5.0">
                 <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
                 <Label text="Max Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="1" textAlignment="RIGHT"/>
