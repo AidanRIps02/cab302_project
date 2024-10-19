@@ -5,6 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.GridPane;
+import javafx.scene.text.Font;
 
 import java.io.IOException;
 
@@ -22,6 +23,21 @@ public class MainController {
 
     @FXML
     private Label welcomeText1;
+
+    @FXML
+    private Label day1Temp;
+    @FXML
+    private Label day2Temp;
+    @FXML
+    private Label day3Temp;
+    @FXML
+    private Label day4Temp;
+    @FXML
+    private Label day5Temp;
+    @FXML
+    private Label day6Temp;
+    @FXML
+    private Label day7Temp;
 
     //day1
     @FXML
@@ -148,6 +164,10 @@ public class MainController {
         String set1MinTemp = set1[7];
         String set1MaxTemp = set1[9];
 
+        String day1TempValue = String.valueOf((int)Math.ceil((double)(Integer.parseInt(set1MinTemp) + Integer.parseInt(set1MaxTemp)) / 2)) + "°";
+        day1Temp.setText(day1TempValue);
+        day1Temp.setStyle("-fx-font: 72 calibre;");
+
         day1MinRain.setText(set1MinRain);
         day1MaxRain.setText(set1MaxRain);
         day1MinTemp.setText(set1MinTemp);
@@ -159,6 +179,10 @@ public class MainController {
         String set2MaxRain = set2[5];
         String set2MinTemp = set2[7];
         String set2MaxTemp = set2[9];
+
+        String day2TempValue = String.valueOf((int)Math.ceil((double)(Integer.parseInt(set2MinTemp) + Integer.parseInt(set2MaxTemp)) / 2)) + "°";
+        day2Temp.setText(day2TempValue);
+        day2Temp.setStyle("-fx-font: 72 calibre;");
 
         day2MinRain.setText(set2MinRain);
         day2MaxRain.setText(set2MaxRain);
@@ -172,6 +196,10 @@ public class MainController {
         String set3MinTemp = set3[7];
         String set3MaxTemp = set3[9];
 
+        String day3TempValue = String.valueOf((int)Math.ceil((double)(Integer.parseInt(set3MinTemp) + Integer.parseInt(set3MaxTemp)) / 2)) + "°";
+        day3Temp.setText(day3TempValue);
+        day3Temp.setStyle("-fx-font: 72 calibre;");
+
         day3MinRain.setText(set3MinRain);
         day3MaxRain.setText(set3MaxRain);
         day3MinTemp.setText(set3MinTemp);
@@ -183,6 +211,10 @@ public class MainController {
         String set4MaxRain = set4[5];
         String set4MinTemp = set4[7];
         String set4MaxTemp = set4[9];
+
+        String day4TempValue = String.valueOf((int)Math.ceil((double)(Integer.parseInt(set4MinTemp) + Integer.parseInt(set4MaxTemp)) / 2)) + "°";
+        day4Temp.setText(day4TempValue);
+        day4Temp.setStyle("-fx-font: 72 calibre;");
 
         day4MinRain.setText(set4MinRain);
         day4MaxRain.setText(set4MaxRain);
@@ -196,6 +228,10 @@ public class MainController {
         String set5MinTemp = set5[7];
         String set5MaxTemp = set5[9];
 
+        String day5TempValue = String.valueOf((int)Math.ceil((double)(Integer.parseInt(set5MinTemp) + Integer.parseInt(set5MaxTemp)) / 2)) + "°";
+        day5Temp.setText(day5TempValue);
+        day5Temp.setStyle("-fx-font: 72 calibre;");
+
         day5MinRain.setText(set5MinRain);
         day5MaxRain.setText(set5MaxRain);
         day5MinTemp.setText(set5MinTemp);
@@ -207,6 +243,10 @@ public class MainController {
         String set6MaxRain = set6[5];
         String set6MinTemp = set6[7];
         String set6MaxTemp = set6[9];
+
+        String day6TempValue = String.valueOf((int)Math.ceil((double)(Integer.parseInt(set6MinTemp) + Integer.parseInt(set6MaxTemp)) / 2)) + "°";
+        day6Temp.setText(day6TempValue);
+        day6Temp.setStyle("-fx-font: 72 calibre;");
 
         day6MinRain.setText(set6MinRain);
         day6MaxRain.setText(set6MaxRain);
@@ -220,6 +260,10 @@ public class MainController {
             String set7MaxRain = set7[5];
             String set7MinTemp = set7[7];
             String set7MaxTemp = set7[9];
+
+            String day7TempValue = String.valueOf((int)Math.ceil((double)(Integer.parseInt(set7MinTemp) + Integer.parseInt(set7MaxTemp)) / 2)) + "°";
+            day7Temp.setText(day7TempValue);
+            day7Temp.setStyle("-fx-font: 72 calibre;");
 
             day7MinRain.setText(set7MinRain);
             day7MaxRain.setText(set7MaxRain);
@@ -237,6 +281,7 @@ public class MainController {
         if(outputStringSplit.length == 14){
             String set7Extended = outputStringSplit[14];
         }
+
 
 
 

@@ -37,20 +37,20 @@
                 <padding>
                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
-                <VBox   alignment="TOP_CENTER"
+                <VBox   alignment="CENTER"
                         spacing="0.0"
                         style="-fx-background-color: lightblue;"
                         minWidth="150"
                         maxWidth="150"
                         minHeight="150"
                         maxHeight="150">
+
                     <Label fx:id="day1Temp"
-                           alignment="TOP_CENTER"
+                           alignment="CENTER"
                            text="Unavailable"
                            wrapText="true"
-                    >
-
-                    </Label>
+                           style="-fx-font: 24 calibre;"
+                    />
                 </VBox>
                 <GridPane hgap="5.0" vgap="5.0">
                     <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
@@ -76,12 +76,17 @@
             <VBox
                     alignment="CENTER"
                     spacing="0.0"
-                    fx:id="day2Temp"
                     style="-fx-background-color: lightgrey;"
                     minWidth="150"
                     maxWidth="150"
                     minHeight="150"
                     maxHeight="150">
+                <Label fx:id="day2Temp"
+                       alignment="CENTER"
+                       text="Unavailable"
+                       wrapText="true"
+                       style="-fx-font: 24 calibre;"
+                />
             </VBox>
             <GridPane hgap="5.0" vgap="5.0">
                 <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
@@ -107,12 +112,17 @@
             <VBox
                     alignment="CENTER"
                     spacing="0.0"
-                    fx:id="day3Temp"
                     style="-fx-background-color: lightblue;"
                     minWidth="150"
                     maxWidth="150"
                     minHeight="150"
                     maxHeight="150">
+                <Label fx:id="day3Temp"
+                       alignment="CENTER"
+                       text="Unavailable"
+                       wrapText="true"
+                       style="-fx-font: 24 calibre;"
+                />
             </VBox>
             <GridPane hgap="5.0" vgap="5.0">
                 <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
@@ -138,12 +148,17 @@
             <VBox
                     alignment="CENTER"
                     spacing="0.0"
-                    fx:id="day4Temp"
                     style="-fx-background-color: lightgrey;"
                     minWidth="150"
                     maxWidth="150"
                     minHeight="150"
                     maxHeight="150">
+                <Label fx:id="day4Temp"
+                       alignment="CENTER"
+                       text="Unavailable"
+                       wrapText="true"
+                       style="-fx-font: 24 calibre;"
+                />
             </VBox>
             <GridPane hgap="5.0" vgap="5.0">
                 <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
@@ -169,12 +184,17 @@
             <VBox
                     alignment="CENTER"
                     spacing="0.0"
-                    fx:id="day5Temp"
                     style="-fx-background-color: lightblue;"
                     minWidth="150"
                     maxWidth="150"
                     minHeight="150"
                     maxHeight="150">
+                <Label fx:id="day5Temp"
+                       alignment="CENTER"
+                       text="Unavailable"
+                       wrapText="true"
+                       style="-fx-font: 24 calibre;"
+                />
             </VBox>
             <GridPane hgap="5.0" vgap="5.0">
                 <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
@@ -200,12 +220,17 @@
             <VBox
                     alignment="CENTER"
                     spacing="0.0"
-                    fx:id="day6Temp"
                     style="-fx-background-color: lightgrey;"
                     minWidth="150"
                     maxWidth="150"
                     minHeight="150"
                     maxHeight="150">
+                <Label fx:id="day6Temp"
+                       alignment="CENTER"
+                       text="Unavailable"
+                       wrapText="true"
+                       style="-fx-font: 24 calibre;"
+                />
             </VBox>
             <GridPane hgap="5.0" vgap="5.0">
                 <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
@@ -231,12 +256,17 @@
             <VBox
                     alignment="CENTER"
                     spacing="0.0"
-                    fx:id="day7Temp"
                     style="-fx-background-color: lightblue;"
                     minWidth="150"
                     maxWidth="150"
                     minHeight="150"
                     maxHeight="150">
+                <Label fx:id="day7Temp"
+                       alignment="CENTER"
+                       text="Unavailable"
+                       wrapText="true"
+                       style="-fx-font: 24 calibre;"
+                />
             </VBox>
             <GridPane hgap="5.0" vgap="5.0">
                 <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
