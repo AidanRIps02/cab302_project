@@ -141,15 +141,92 @@ public class MainController {
         }
         String metaData = outputStringSplit[0];
 
-        String set1 = outputStringSplit[1];
-        String set2 = outputStringSplit[3];
-        String set3 = outputStringSplit[5];
-        String set4 = outputStringSplit[7];
-        String set5 = outputStringSplit[9];
-        String set6 = outputStringSplit[11];
+        String set1[] = outputStringSplit[1].split("\\$");
+        String set1Date = set1[1];
+        String set1MinRain = set1[3];
+        String set1MaxRain = set1[5];
+        String set1MinTemp = set1[7];
+        String set1MaxTemp = set1[9];
+
+        day1MinRain.setText(set1MinRain);
+        day1MaxRain.setText(set1MaxRain);
+        day1MinTemp.setText(set1MinTemp);
+        day1MaxTemp.setText(set1MaxTemp);
+
+        String set2[] = outputStringSplit[3].split("\\$");
+        String set2Date = set2[1];
+        String set2MinRain = set2[3];
+        String set2MaxRain = set2[5];
+        String set2MinTemp = set2[7];
+        String set2MaxTemp = set2[9];
+
+        day2MinRain.setText(set2MinRain);
+        day2MaxRain.setText(set2MaxRain);
+        day2MinTemp.setText(set2MinTemp);
+        day2MaxTemp.setText(set2MaxTemp);
+
+        String set3[] = outputStringSplit[5].split("\\$");
+        String set3Date = set3[1];
+        String set3MinRain = set3[3];
+        String set3MaxRain = set3[5];
+        String set3MinTemp = set3[7];
+        String set3MaxTemp = set3[9];
+
+        day3MinRain.setText(set3MinRain);
+        day3MaxRain.setText(set3MaxRain);
+        day3MinTemp.setText(set3MinTemp);
+        day3MaxTemp.setText(set3MaxTemp);
+
+        String set4[] = outputStringSplit[7].split("\\$");
+        String set4Date = set4[1];
+        String set4MinRain = set4[3];
+        String set4MaxRain = set4[5];
+        String set4MinTemp = set4[7];
+        String set4MaxTemp = set4[9];
+
+        day4MinRain.setText(set4MinRain);
+        day4MaxRain.setText(set4MaxRain);
+        day4MinTemp.setText(set4MinTemp);
+        day4MaxTemp.setText(set4MaxTemp);
+
+        String set5[] = outputStringSplit[9].split("\\$");
+        String set5Date = set5[1];
+        String set5MinRain = set5[3];
+        String set5MaxRain = set5[5];
+        String set5MinTemp = set5[7];
+        String set5MaxTemp = set5[9];
+
+        day5MinRain.setText(set5MinRain);
+        day5MaxRain.setText(set5MaxRain);
+        day5MinTemp.setText(set5MinTemp);
+        day5MaxTemp.setText(set5MaxTemp);
+
+        String set6[] = outputStringSplit[11].split("\\$");
+        String set6Date = set6[1];
+        String set6MinRain = set6[3];
+        String set6MaxRain = set6[5];
+        String set6MinTemp = set6[7];
+        String set6MaxTemp = set6[9];
+
+        day6MinRain.setText(set6MinRain);
+        day6MaxRain.setText(set6MaxRain);
+        day6MinTemp.setText(set6MinTemp);
+        day6MaxTemp.setText(set6MaxTemp);
+
         if(outputStringSplit.length == 14){
-            String set7 = outputStringSplit[13];
+            String set7[] = outputStringSplit[13].split("\\$");
+            String set7Date = set7[1];
+            String set7MinRain = set7[3];
+            String set7MaxRain = set7[5];
+            String set7MinTemp = set7[7];
+            String set7MaxTemp = set7[9];
+
+            day7MinRain.setText(set7MinRain);
+            day7MaxRain.setText(set7MaxRain);
+            day7MinTemp.setText(set7MinTemp);
+            day7MaxTemp.setText(set7MaxTemp);
         }
+
 
         String set1Extended = outputStringSplit[2];
         String set2Extended = outputStringSplit[4];
@@ -162,10 +239,7 @@ public class MainController {
         }
 
 
-        day1MinTemp.setText("4");
-        day1MaxTemp.setText("4");
-        day1MinRain.setText("4");
-        day1MaxRain.setText("4");
+
 
         //welcomeText7.setText(APIuser.toString());
         metaDataText.setText(metaData);

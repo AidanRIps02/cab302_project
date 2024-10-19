@@ -30,7 +30,9 @@
             <VBox alignment="CENTER"
                   spacing="0.0"
                   fx:id="day1"
-                  style="-fx-background-color: lightgray;">
+                  style="-fx-background-color: lightgray;"
+                  minWidth="150"
+                  maxWidth="150">
                 <padding>
                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
@@ -49,7 +51,9 @@
         <VBox alignment="CENTER"
               spacing="0.0"
               fx:id="day2"
-              style="-fx-background-color: lightblue;">
+              style="-fx-background-color: lightblue;"
+              minWidth="150"
+              maxWidth="150">
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
@@ -69,7 +73,9 @@
         <VBox alignment="CENTER"
               spacing="0.0"
               fx:id="day3"
-              style="-fx-background-color: lightgray;">
+              style="-fx-background-color: lightgray;"
+              minWidth="150"
+              maxWidth="150">
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
@@ -89,7 +95,9 @@
         <VBox alignment="CENTER"
               spacing="0.0"
               fx:id="day4"
-              style="-fx-background-color: lightblue;">
+              style="-fx-background-color: lightblue;"
+              minWidth="150"
+              maxWidth="150">
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
@@ -109,7 +117,9 @@
         <VBox alignment="CENTER"
               spacing="0.0"
               fx:id="day5"
-              style="-fx-background-color: lightgray;">
+              style="-fx-background-color: lightgray;"
+              minWidth="150"
+              maxWidth="150">
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
@@ -129,7 +139,9 @@
         <VBox alignment="CENTER"
               spacing="0.0"
               fx:id="day6"
-              style="-fx-background-color: lightblue;">
+              style="-fx-background-color: lightblue;"
+              minWidth="150"
+              maxWidth="150">
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
@@ -149,7 +161,9 @@
         <VBox alignment="CENTER"
               spacing="0.0"
               fx:id="day7"
-              style="-fx-background-color: lightgray;">
+              style="-fx-background-color: lightgray;"
+              minWidth="150"
+              maxWidth="150">
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
