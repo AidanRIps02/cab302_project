@@ -28,7 +28,7 @@
     <HBox VBox.vgrow="ALWAYS"
           spacing="20.0"
           alignment="CENTER">
-            <VBox alignment="BASELINE_CENTER"
+            <VBox alignment="TOP_CENTER"
                   spacing="0.0"
                   fx:id="day1"
                   style="-fx-background-color: lightgray;"
@@ -37,7 +37,7 @@
                 <padding>
                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
-                <VBox   alignment="CENTER"
+                <VBox   alignment="TOP_CENTER"
                         spacing="0.0"
                         style="-fx-background-color: lightblue;"
                         minWidth="150"
@@ -45,7 +45,9 @@
                         minHeight="150"
                         maxHeight="150">
                     <Label fx:id="day1Temp"
-                           text="Current Temperature Unavailable"
+                           alignment="TOP_CENTER"
+                           text="Unavailable"
+                           wrapText="true"
                     >
 
                     </Label>
@@ -61,8 +63,8 @@
                     <Label fx:id="day1MaxRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
                     <Button fx:id="nextButton1" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
                 </GridPane>
-                </VBox>
-        <VBox alignment="BASELINE_CENTER"
+            </VBox>
+        <VBox alignment="TOP_CENTER"
               spacing="0.0"
               fx:id="day2"
               style="-fx-background-color: lightblue;"
@@ -93,7 +95,7 @@
                 <Button fx:id="nextButton2" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
             </GridPane>
         </VBox>
-        <VBox alignment="BASELINE_CENTER"
+        <VBox alignment="TOP_CENTER"
               spacing="0.0"
               fx:id="day3"
               style="-fx-background-color: lightgray;"
@@ -124,7 +126,7 @@
                 <Button fx:id="nextButton3" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
             </GridPane>
         </VBox>
-        <VBox alignment="BASELINE_CENTER"
+        <VBox alignment="TOP_CENTER"
               spacing="0.0"
               fx:id="day4"
               style="-fx-background-color: lightblue;"
@@ -155,7 +157,7 @@
                 <Button fx:id="nextButton4" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
             </GridPane>
         </VBox>
-        <VBox alignment="BASELINE_CENTER"
+        <VBox alignment="TOP_CENTER"
               spacing="0.0"
               fx:id="day5"
               style="-fx-background-color: lightgray;"
@@ -186,7 +188,7 @@
                 <Button fx:id="nextButton5" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
             </GridPane>
         </VBox>
-        <VBox alignment="BASELINE_CENTER"
+        <VBox alignment="TOP_CENTER"
               spacing="0.0"
               fx:id="day6"
               style="-fx-background-color: lightblue;"
@@ -217,7 +219,7 @@
                 <Button fx:id="nextButton6" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
             </GridPane>
         </VBox>
-        <VBox alignment="BASELINE_CENTER"
+        <VBox alignment="TOP_CENTER"
               spacing="0.0"
               fx:id="day7"
               style="-fx-background-color: lightgray;"
