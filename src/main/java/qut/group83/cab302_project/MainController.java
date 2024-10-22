@@ -39,6 +39,9 @@ public class MainController {
     @FXML
     private Label day7Temp;
 
+    @FXML
+    private Label[] test1;
+
     //day1
     @FXML
     private Label day1MinTemp;
