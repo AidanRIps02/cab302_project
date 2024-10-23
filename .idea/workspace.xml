@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e202e056-e6a3-4664-8346-c6dfe2a50c7d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/HelloApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +75,7 @@
       <recent name="LoginListener.java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="qut.group83.cab302_project.HelloApplication" />
       <module name="cab302_project" />
@@ -88,6 +89,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="qut.group83.cab302_project.Main" />
+      <module name="cab302_project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.HelloApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.HelloApplication" />
