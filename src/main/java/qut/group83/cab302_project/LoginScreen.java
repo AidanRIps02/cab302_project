@@ -29,8 +29,8 @@ public class LoginScreen {
         leftPane.setPrefHeight(400); // Set height based on your window size
 
     // Title (Text node)
-        Text title = new Text("Welcome to the Weather Forest Tracker");
-        title.setFont(Font.font("Arial", FontWeight.BOLD, 20)); // Set font size and weight
+        Text title = new Text("Welcome to the Weather Forecast Tracker");
+        title.setFont(Font.font("Arial", FontWeight.BOLD, 18)); // Set font size and weight
         title.setFill(Color.WHITE); // Set text color to black
 
     // Add the title to the leftPane
