@@ -7,7 +7,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         // Assuming you have a login screen that transitions to the home screen upon successful login
-        new LoginScreen(primaryStage); // Start with the login screen
+        new HomeScreen(primaryStage); // Start with the login screen
         primaryStage.show();
     }
 

@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e202e056-e6a3-4664-8346-c6dfe2a50c7d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/Alertpage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/HomeScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/LoginScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/WeatherReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qut/group83/cab302_project/WeatherReport.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>

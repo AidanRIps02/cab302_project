@@ -7,7 +7,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
@@ -25,16 +24,20 @@ public class LoginScreen {
         leftPane.setStyle("-fx-background-color: #1E90FF;"); // Blue color
 
     // Set a preferred size for the VBox to prevent it from overflowing
-        leftPane.setPrefWidth(250); // Set a reasonable width for the left pane
+        leftPane.setPrefWidth(350); // Set a reasonable width for the left pane
         leftPane.setPrefHeight(400); // Set height based on your window size
 
     // Title (Text node)
-        Text title = new Text("Welcome to the Weather Forest Tracker");
-        title.setFont(Font.font("Arial", FontWeight.BOLD, 20)); // Set font size and weight
+        Text title = new Text("Welcome Back!");
+        title.setFont(Font.font("Arial", FontWeight.BOLD, 25)); // Set font size and weight
         title.setFill(Color.WHITE); // Set text color to black
+    //subtitle (Text node)
+        Text subtitle = new Text("Login to your account ");
+        subtitle.setFont(Font.font("Arial", FontWeight.BOLD, 25)); // Set font size and weight
+        subtitle.setFill(Color.WHITE); // Set text color to black
 
-    // Add the title to the leftPane
-        leftPane.getChildren().add(title);
+    // Add the title and subtitle to the leftPane
+        leftPane.getChildren().addAll(title, subtitle);
 
         // Right side - Login Form
         VBox rightPane = new VBox(10);
@@ -56,7 +59,7 @@ public class LoginScreen {
         loginButton.setStyle("-fx-background-color: #1E90FF; -fx-text-fill: white;");
 
         // Signup link
-        Label signUpLabel = new Label("Not a user? ");
+        Label signUpLabel = new Label("            Not a user?         ");
         Button signUpButton = new Button("Sign up!");
         signUpButton.setStyle("-fx-background-color: transparent; -fx-text-fill: blue; -fx-underline: true;");
 
@@ -83,7 +86,7 @@ public class LoginScreen {
         // Implement login logic
         loginButton.setOnAction(e -> {
             if (validateLogin(usernameField.getText(), passwordField.getText())) {
-                new HomeScreen(primaryStage); // Navigate to the home page on successful login
+                new Alertpage(primaryStage); // Navigate to the home page on successful login
             } else {
                 Label loginFailedLabel = new Label("Login Failed: Invalid username or password");
                 if (!root.getChildren().contains(loginFailedLabel)) {

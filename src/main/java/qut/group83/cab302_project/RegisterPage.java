@@ -7,7 +7,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
@@ -36,7 +35,7 @@ public class RegisterPage {
 // Add the title to the leftPane
         leftPane.getChildren().add(title);
 
-        // Right side - Login Form
+        // Right side - Signup Form
         VBox rightPane = new VBox(10);
         rightPane.setAlignment(Pos.CENTER);
         rightPane.setPadding(new Insets(20));
@@ -51,12 +50,12 @@ public class RegisterPage {
         PasswordField passwordField = new PasswordField();
         passwordField.setPromptText("Enter your password");
 
-        // Login button
-        Button submitButton = new Button("Register");
+        // register button
+        Button submitButton = new Button("Signup");
         submitButton.setStyle("-fx-background-color: #1E90FF; -fx-text-fill: white;");
 
-        // Signup link
-        Label BackLabel = new Label("Back to the login page ");
+        // back link
+        Label BackLabel = new Label("Already have a account");
         Button BackButton = new Button("BACK!");
         BackButton.setStyle("-fx-background-color: transparent; -fx-text-fill: blue; -fx-underline: true;");
 

@@ -1,27 +1,49 @@
 package qut.group83.cab302_project;
 
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class WeatherReport extends Stage {
-    public WeatherReport(String location) {
-        setTitle("Weather Details for " + location);
-        VBox root = new VBox(10);
+    public WeatherReport(Stage primaryStage) {
+        BorderPane root = new BorderPane();
 
-        // Adding some mock details
-        root.getChildren().addAll(
-                new Label("Radar Image Here"),
-                new Label("Upcoming Weather: Sunny"),
-                new Label("General Week Long Weather Report"),
-                new Label("Sunrise/Sunset Time: 06:00/18:00"),
-                new Label("Feels Like Temperature: 28°C"),
-                new Label("Humidity Level: 45%")
-        );
+        // Welcome label placed in the top with VBox for additional components
+        VBox topBox = new VBox(10);
+        Label welcomeLabel = new Label("Welcome to the Home Page!");
+        topBox.getChildren().add(welcomeLabel);
+        root.setTop(topBox);
 
-        Scene scene = new Scene(root, 600, 400);
-        setScene(scene);
-        show();
+        // North panel with combo box
+        HBox northPanel = new HBox(10);
+        northPanel.setAlignment(Pos.CENTER);
+        Label locationLabel = new Label("Select Location:");
+        ComboBox<String> locations = new ComboBox<>();
+        locations.getItems().addAll("Location 1", "Location 2", "Location 3");
+        northPanel.getChildren().addAll(locationLabel, locations);
+        topBox.getChildren().add(northPanel);  // Add to top VBox
+
+        // Center panel with weather report text area
+        TextArea weatherReport = new TextArea("Weather report...");
+        root.setCenter(weatherReport);
+
+        // South panel with a button
+        HBox southPanel = new HBox(10);
+        southPanel.setAlignment(Pos.CENTER);
+        Button setAlertsButton = new Button("Set Alerts");
+        southPanel.getChildren().add(setAlertsButton);
+        root.setBottom(southPanel);
+
+        Scene scene = new Scene(root, 600, 400);  // Adjusted scene size for better layout view
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("Home Page");
     }
 }
+
