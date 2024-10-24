@@ -31,6 +31,7 @@ public class Weather {
                 ",maximumRain=" + "$" + data[1].rain.amount.max + "$" +
                 ",minimumTemperature=" + "$" + data[1].temp_min + "$" +
                 ",maximumTemperature=" + "$" + data[1].temp_max + "$" +
+                ",rainChance=" + "$" + data[1].rain.chance + "$" +
                 "}\n" +
                 data[1].extended_text +
                 "\nSet2{" +
@@ -39,6 +40,7 @@ public class Weather {
                 ",maximumRain=" + "$" + data[2].rain.amount.max + "$" +
                 ",minimumTemperature=" + "$" + data[2].temp_min + "$" +
                 ",maximumTemperature=" + "$" + data[2].temp_max + "$" +
+                ",rainChance=" + "$" + data[2].rain.chance + "$" +
                 "}\n" +
                 data[2].extended_text +
                 "\nSet3{" +
@@ -47,6 +49,7 @@ public class Weather {
                 ",maximumRain=" + "$" + data[3].rain.amount.max + "$" +
                 ",minimumTemperature=" + "$" + data[3].temp_min + "$" +
                 ",maximumTemperature=" +  "$" +data[3].temp_max + "$" +
+                ",rainChance=" + "$" + data[3].rain.chance + "$" +
                 "}\n" +
                 data[3].extended_text +
                 "\nSet4{" +
@@ -55,6 +58,7 @@ public class Weather {
                 ",maximumRain=" + "$" + data[4].rain.amount.max + "$" +
                 ",minimumTemperature=" + "$" + data[4].temp_min + "$" +
                 ",maximumTemperature=" + "$" + data[4].temp_max + "$" +
+                ",rainChance=" + "$" + data[4].rain.chance + "$" +
                 "}\n" +
                 data[4].extended_text +
                 "\nSet5{" +
@@ -63,6 +67,7 @@ public class Weather {
                 ",maximumRain=" + "$" + data[5].rain.amount.max + "$" +
                 ",minimumTemperature=" + "$" + data[5].temp_min + "$" +
                 ",maximumTemperature=" + "$" + data[5].temp_max + "$" +
+                ",rainChance=" + "$" + data[5].rain.chance + "$" +
                 "}\n" +
                 data[5].extended_text +
                 "\nSet6{" +
@@ -71,6 +76,7 @@ public class Weather {
                 ",maximumRain=" + "$" + data[6].rain.amount.max + "$" +
                 ",minimumTemperature=" + "$" + data[6].temp_min + "$" +
                 ",maximumTemperature=" + "$" + data[6].temp_max + "$" +
+                ",rainChance=" + "$" + data[6].rain.chance + "$" +
                 "}\n" +
                 data[6].extended_text;
 
@@ -81,6 +87,7 @@ public class Weather {
                             ",maximumRain=" + "$" + data[7].rain.amount.max + "$" +
                             ",minimumTemperature=" + "$" + data[7].temp_min + "$" +
                             ",maximumTemperature=" + "$" + data[7].temp_max + "$" +
+                            ",rainChance=" + "$" + data[7].rain.chance + "$" +
                             "}\n" +
                             data[7].extended_text;
                 }

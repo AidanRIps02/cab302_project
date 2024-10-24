@@ -28,22 +28,22 @@
     <HBox VBox.vgrow="ALWAYS"
           spacing="20.0"
           alignment="CENTER">
-            <VBox alignment="TOP_CENTER"
-                  spacing="0.0"
-                  fx:id="day1"
-                  style="-fx-background-color: lightgray;"
-                  minWidth="150"
-                  maxWidth="150">
-                <padding>
-                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
-                </padding>
-                <VBox   alignment="CENTER"
+        <VBox alignment="TOP_CENTER"
+              spacing="0.0"
+              fx:id="day1"
+              style="-fx-background-color: lightgray;"
+              minWidth="150"
+              maxWidth="150">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="0.0"/>
+            </padding>
+            <VBox   alignment="CENTER"
                         spacing="0.0"
                         style="-fx-background-color: lightblue;"
                         minWidth="150"
                         maxWidth="150"
-                        minHeight="150"
-                        maxHeight="150">
+                        minHeight="100"
+                        maxHeight="100">
 
                     <Label fx:id="day1Temp"
                            alignment="CENTER"
@@ -52,35 +52,99 @@
                            style="-fx-font: 24 calibre;"
                     />
                 </VBox>
-                <GridPane hgap="5.0" vgap="5.0">
-                    <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
-                    <Label text="Max Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="1" textAlignment="RIGHT"/>
-                    <Label text="Min Rain:" GridPane.columnIndex="0" GridPane.rowIndex="2" textAlignment="RIGHT"/>
-                    <Label text="Max Rain:" GridPane.columnIndex="0" GridPane.rowIndex="3" textAlignment="RIGHT"/>
-                    <Label fx:id="day1MinTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
-                    <Label fx:id="day1MaxTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-                    <Label fx:id="day1MinRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-                    <Label fx:id="day1MaxRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
-                    <Button fx:id="nextButton1" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
-                </GridPane>
+            <HBox>
+                <VBox GridPane.columnIndex="0"
+                          GridPane.rowIndex="0"
+                          style="-fx-background-color: aqua;"
+                          alignment="CENTER"
+                          minWidth="75"
+                          maxWidth="75"
+                          minHeight="50"
+                          maxHeight="50">
+                        <Label fx:id="day1MinTemp"
+                               text="N/A"
+                               textAlignment="CENTER"
+                               style="-fx-font: 18 calibre;"/>
+                    </VBox>
+                <VBox GridPane.columnIndex="1"
+                          GridPane.rowIndex="0"
+                          style="-fx-background-color: red;"
+                          alignment="CENTER"
+                          minWidth="75"
+                          maxWidth="75"
+                          minHeight="50"
+                          maxHeight="50">
+                        <Label fx:id="day1MaxTemp"
+                               text="N/A"
+                               textAlignment="CENTER"
+                               style="-fx-font: 18 calibre;"/>
+                    </VBox>
+            </HBox>
+            <VBox   alignment="CENTER"
+                        spacing="0.0"
+                        style="-fx-background-color: lightblue;"
+                        minWidth="150"
+                        maxWidth="150"
+                        minHeight="100"
+                        maxHeight="100">
+
+                    <Label fx:id="day1RainChance"
+                           alignment="CENTER"
+                           text="Unavailable"
+                           wrapText="true"
+                           style="-fx-font: 24 calibre;"
+                    />
+                </VBox>
+            <HBox>
+                    <VBox style="-fx-background-color: aqua;"
+                          alignment="CENTER"
+                          minWidth="75"
+                          maxWidth="75"
+                          minHeight="50"
+                          maxHeight="50">
+                        <Label fx:id="day1MinRain"
+                               text="N/A"
+                               textAlignment="CENTER"
+                               style="-fx-font: 18 calibre;"/>
+                    </VBox>
+                    <VBox style="-fx-background-color: red;"
+                          alignment="CENTER"
+                          minWidth="75"
+                          maxWidth="75"
+                          minHeight="50"
+                          maxHeight="50">
+                        <Label fx:id="day1MaxRain"
+                               text="N/A"
+                               textAlignment="CENTER"
+                               style="-fx-font: 18 calibre;"/>
+
+                    </VBox>
+                </HBox>
+            <VBox>
+                <Label fx:id="day1AdvancedDetails"
+                       alignment="CENTER"
+                       text="Unavailable"
+                       wrapText="true"
+                       style="-fx-font: 12 calibre;"/>
             </VBox>
+        </VBox>
         <VBox alignment="TOP_CENTER"
               spacing="0.0"
               fx:id="day2"
-              style="-fx-background-color: lightblue;"
+              style="-fx-background-color: lightgray;"
               minWidth="150"
               maxWidth="150">
             <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="0.0"/>
             </padding>
-            <VBox
-                    alignment="CENTER"
+            <VBox   alignment="CENTER"
                     spacing="0.0"
-                    style="-fx-background-color: lightgrey;"
+                    style="-fx-background-color: lightblue;"
                     minWidth="150"
                     maxWidth="150"
-                    minHeight="150"
-                    maxHeight="150">
+                    minHeight="100"
+                    maxHeight="100">
+
                 <Label fx:id="day2Temp"
                        alignment="CENTER"
                        text="Unavailable"
@@ -88,17 +152,81 @@
                        style="-fx-font: 24 calibre;"
                 />
             </VBox>
-            <GridPane hgap="5.0" vgap="5.0">
-                <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
-                <Label text="Max Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="1" textAlignment="RIGHT"/>
-                <Label text="Min Rain:" GridPane.columnIndex="0" GridPane.rowIndex="2" textAlignment="RIGHT"/>
-                <Label text="Max Rain:" GridPane.columnIndex="0" GridPane.rowIndex="3" textAlignment="RIGHT"/>
-                <Label fx:id="day2MinTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
-                <Label fx:id="day2MaxTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-                <Label fx:id="day2MinRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-                <Label fx:id="day2MaxRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
-                <Button fx:id="nextButton2" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
-            </GridPane>
+            <HBox>
+                <VBox GridPane.columnIndex="0"
+                      GridPane.rowIndex="0"
+                      style="-fx-background-color: aqua;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day2MinTemp"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+                </VBox>
+                <VBox GridPane.columnIndex="1"
+                      GridPane.rowIndex="0"
+                      style="-fx-background-color: red;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day2MaxTemp"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+                </VBox>
+            </HBox>
+            <VBox   alignment="CENTER"
+                    spacing="0.0"
+                    style="-fx-background-color: lightblue;"
+                    minWidth="150"
+                    maxWidth="150"
+                    minHeight="100"
+                    maxHeight="100">
+
+                <Label fx:id="day2RainChance"
+                       alignment="CENTER"
+                       text="Unavailable"
+                       wrapText="true"
+                       style="-fx-font: 24 calibre;"
+                />
+            </VBox>
+            <HBox>
+                <VBox style="-fx-background-color: aqua;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day2MinRain"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+                </VBox>
+                <VBox style="-fx-background-color: red;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day2MaxRain"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+
+                </VBox>
+            </HBox>
+            <VBox>
+                <Label fx:id="day2AdvancedDetails"
+                       alignment="CENTER"
+                       text="Unavailable"
+                       wrapText="true"
+                       style="-fx-font: 12 calibre;"/>
+            </VBox>
         </VBox>
         <VBox alignment="TOP_CENTER"
               spacing="0.0"
@@ -107,16 +235,16 @@
               minWidth="150"
               maxWidth="150">
             <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="0.0"/>
             </padding>
-            <VBox
-                    alignment="CENTER"
+            <VBox   alignment="CENTER"
                     spacing="0.0"
                     style="-fx-background-color: lightblue;"
                     minWidth="150"
                     maxWidth="150"
-                    minHeight="150"
-                    maxHeight="150">
+                    minHeight="100"
+                    maxHeight="100">
+
                 <Label fx:id="day3Temp"
                        alignment="CENTER"
                        text="Unavailable"
@@ -124,35 +252,99 @@
                        style="-fx-font: 24 calibre;"
                 />
             </VBox>
-            <GridPane hgap="5.0" vgap="5.0">
-                <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
-                <Label text="Max Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="1" textAlignment="RIGHT"/>
-                <Label text="Min Rain:" GridPane.columnIndex="0" GridPane.rowIndex="2" textAlignment="RIGHT"/>
-                <Label text="Max Rain:" GridPane.columnIndex="0" GridPane.rowIndex="3" textAlignment="RIGHT"/>
-                <Label fx:id="day3MinTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
-                <Label fx:id="day3MaxTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-                <Label fx:id="day3MinRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-                <Label fx:id="day3MaxRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
-                <Button fx:id="nextButton3" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
-            </GridPane>
+            <HBox>
+                <VBox GridPane.columnIndex="0"
+                      GridPane.rowIndex="0"
+                      style="-fx-background-color: aqua;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day3MinTemp"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+                </VBox>
+                <VBox GridPane.columnIndex="1"
+                      GridPane.rowIndex="0"
+                      style="-fx-background-color: red;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day3MaxTemp"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+                </VBox>
+            </HBox>
+            <VBox   alignment="CENTER"
+                    spacing="0.0"
+                    style="-fx-background-color: lightblue;"
+                    minWidth="150"
+                    maxWidth="150"
+                    minHeight="100"
+                    maxHeight="100">
+
+                <Label fx:id="day3RainChance"
+                       alignment="CENTER"
+                       text="Unavailable"
+                       wrapText="true"
+                       style="-fx-font: 24 calibre;"
+                />
+            </VBox>
+            <HBox>
+                <VBox style="-fx-background-color: aqua;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day3MinRain"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+                </VBox>
+                <VBox style="-fx-background-color: red;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day3MaxRain"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+
+                </VBox>
+            </HBox>
+            <VBox>
+                <Label fx:id="day3AdvancedDetails"
+                       alignment="CENTER"
+                       text="Unavailable"
+                       wrapText="true"
+                       style="-fx-font: 12 calibre;"/>
+            </VBox>
         </VBox>
         <VBox alignment="TOP_CENTER"
               spacing="0.0"
               fx:id="day4"
-              style="-fx-background-color: lightblue;"
+              style="-fx-background-color: lightgray;"
               minWidth="150"
               maxWidth="150">
             <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="0.0"/>
             </padding>
-            <VBox
-                    alignment="CENTER"
+            <VBox   alignment="CENTER"
                     spacing="0.0"
-                    style="-fx-background-color: lightgrey;"
+                    style="-fx-background-color: lightblue;"
                     minWidth="150"
                     maxWidth="150"
-                    minHeight="150"
-                    maxHeight="150">
+                    minHeight="100"
+                    maxHeight="100">
+
                 <Label fx:id="day4Temp"
                        alignment="CENTER"
                        text="Unavailable"
@@ -160,17 +352,81 @@
                        style="-fx-font: 24 calibre;"
                 />
             </VBox>
-            <GridPane hgap="5.0" vgap="5.0">
-                <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
-                <Label text="Max Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="1" textAlignment="RIGHT"/>
-                <Label text="Min Rain:" GridPane.columnIndex="0" GridPane.rowIndex="2" textAlignment="RIGHT"/>
-                <Label text="Max Rain:" GridPane.columnIndex="0" GridPane.rowIndex="3" textAlignment="RIGHT"/>
-                <Label fx:id="day4MinTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
-                <Label fx:id="day4MaxTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-                <Label fx:id="day4MinRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-                <Label fx:id="day4MaxRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
-                <Button fx:id="nextButton4" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
-            </GridPane>
+            <HBox>
+                <VBox GridPane.columnIndex="0"
+                      GridPane.rowIndex="0"
+                      style="-fx-background-color: aqua;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day4MinTemp"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+                </VBox>
+                <VBox GridPane.columnIndex="1"
+                      GridPane.rowIndex="0"
+                      style="-fx-background-color: red;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day4MaxTemp"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+                </VBox>
+            </HBox>
+            <VBox   alignment="CENTER"
+                    spacing="0.0"
+                    style="-fx-background-color: lightblue;"
+                    minWidth="150"
+                    maxWidth="150"
+                    minHeight="100"
+                    maxHeight="100">
+
+                <Label fx:id="day4RainChance"
+                       alignment="CENTER"
+                       text="Unavailable"
+                       wrapText="true"
+                       style="-fx-font: 24 calibre;"
+                />
+            </VBox>
+            <HBox>
+                <VBox style="-fx-background-color: aqua;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day4MinRain"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+                </VBox>
+                <VBox style="-fx-background-color: red;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day4MaxRain"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+
+                </VBox>
+            </HBox>
+            <VBox>
+                <Label fx:id="day4AdvancedDetails"
+                       alignment="CENTER"
+                       text="Unavailable"
+                       wrapText="true"
+                       style="-fx-font: 12 calibre;"/>
+            </VBox>
         </VBox>
         <VBox alignment="TOP_CENTER"
               spacing="0.0"
@@ -179,16 +435,16 @@
               minWidth="150"
               maxWidth="150">
             <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="0.0"/>
             </padding>
-            <VBox
-                    alignment="CENTER"
+            <VBox   alignment="CENTER"
                     spacing="0.0"
                     style="-fx-background-color: lightblue;"
                     minWidth="150"
                     maxWidth="150"
-                    minHeight="150"
-                    maxHeight="150">
+                    minHeight="100"
+                    maxHeight="100">
+
                 <Label fx:id="day5Temp"
                        alignment="CENTER"
                        text="Unavailable"
@@ -196,35 +452,99 @@
                        style="-fx-font: 24 calibre;"
                 />
             </VBox>
-            <GridPane hgap="5.0" vgap="5.0">
-                <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
-                <Label text="Max Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="1" textAlignment="RIGHT"/>
-                <Label text="Min Rain:" GridPane.columnIndex="0" GridPane.rowIndex="2" textAlignment="RIGHT"/>
-                <Label text="Max Rain:" GridPane.columnIndex="0" GridPane.rowIndex="3" textAlignment="RIGHT"/>
-                <Label fx:id="day5MinTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
-                <Label fx:id="day5MaxTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-                <Label fx:id="day5MinRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-                <Label fx:id="day5MaxRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
-                <Button fx:id="nextButton5" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
-            </GridPane>
+            <HBox>
+                <VBox GridPane.columnIndex="0"
+                      GridPane.rowIndex="0"
+                      style="-fx-background-color: aqua;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day5MinTemp"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+                </VBox>
+                <VBox GridPane.columnIndex="1"
+                      GridPane.rowIndex="0"
+                      style="-fx-background-color: red;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day5MaxTemp"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+                </VBox>
+            </HBox>
+            <VBox   alignment="CENTER"
+                    spacing="0.0"
+                    style="-fx-background-color: lightblue;"
+                    minWidth="150"
+                    maxWidth="150"
+                    minHeight="100"
+                    maxHeight="100">
+
+                <Label fx:id="day5RainChance"
+                       alignment="CENTER"
+                       text="Unavailable"
+                       wrapText="true"
+                       style="-fx-font: 24 calibre;"
+                />
+            </VBox>
+            <HBox>
+                <VBox style="-fx-background-color: aqua;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day5MinRain"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+                </VBox>
+                <VBox style="-fx-background-color: red;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day5MaxRain"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+
+                </VBox>
+            </HBox>
+            <VBox>
+                <Label fx:id="day5AdvancedDetails"
+                       alignment="CENTER"
+                       text="Unavailable"
+                       wrapText="true"
+                       style="-fx-font: 12 calibre;"/>
+            </VBox>
         </VBox>
         <VBox alignment="TOP_CENTER"
               spacing="0.0"
               fx:id="day6"
-              style="-fx-background-color: lightblue;"
+              style="-fx-background-color: lightgray;"
               minWidth="150"
               maxWidth="150">
             <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="0.0"/>
             </padding>
-            <VBox
-                    alignment="CENTER"
+            <VBox   alignment="CENTER"
                     spacing="0.0"
-                    style="-fx-background-color: lightgrey;"
+                    style="-fx-background-color: lightblue;"
                     minWidth="150"
                     maxWidth="150"
-                    minHeight="150"
-                    maxHeight="150">
+                    minHeight="100"
+                    maxHeight="100">
+
                 <Label fx:id="day6Temp"
                        alignment="CENTER"
                        text="Unavailable"
@@ -232,17 +552,81 @@
                        style="-fx-font: 24 calibre;"
                 />
             </VBox>
-            <GridPane hgap="5.0" vgap="5.0">
-                <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
-                <Label text="Max Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="1" textAlignment="RIGHT"/>
-                <Label text="Min Rain:" GridPane.columnIndex="0" GridPane.rowIndex="2" textAlignment="RIGHT"/>
-                <Label text="Max Rain:" GridPane.columnIndex="0" GridPane.rowIndex="3" textAlignment="RIGHT"/>
-                <Label fx:id="day6MinTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
-                <Label fx:id="day6MaxTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-                <Label fx:id="day6MinRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-                <Label fx:id="day6MaxRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
-                <Button fx:id="nextButton6" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
-            </GridPane>
+            <HBox>
+                <VBox GridPane.columnIndex="0"
+                      GridPane.rowIndex="0"
+                      style="-fx-background-color: aqua;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day6MinTemp"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+                </VBox>
+                <VBox GridPane.columnIndex="1"
+                      GridPane.rowIndex="0"
+                      style="-fx-background-color: red;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day6MaxTemp"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+                </VBox>
+            </HBox>
+            <VBox   alignment="CENTER"
+                    spacing="0.0"
+                    style="-fx-background-color: lightblue;"
+                    minWidth="150"
+                    maxWidth="150"
+                    minHeight="100"
+                    maxHeight="100">
+
+                <Label fx:id="day6RainChance"
+                       alignment="CENTER"
+                       text="Unavailable"
+                       wrapText="true"
+                       style="-fx-font: 24 calibre;"
+                />
+            </VBox>
+            <HBox>
+                <VBox style="-fx-background-color: aqua;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day6MinRain"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+                </VBox>
+                <VBox style="-fx-background-color: red;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day6MaxRain"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+
+                </VBox>
+            </HBox>
+            <VBox>
+                <Label fx:id="day6AdvancedDetails"
+                       alignment="CENTER"
+                       text="Unavailable"
+                       wrapText="true"
+                       style="-fx-font: 12 calibre;"/>
+            </VBox>
         </VBox>
         <VBox alignment="TOP_CENTER"
               spacing="0.0"
@@ -251,16 +635,16 @@
               minWidth="150"
               maxWidth="150">
             <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="0.0"/>
             </padding>
-            <VBox
-                    alignment="CENTER"
+            <VBox   alignment="CENTER"
                     spacing="0.0"
                     style="-fx-background-color: lightblue;"
                     minWidth="150"
                     maxWidth="150"
-                    minHeight="150"
-                    maxHeight="150">
+                    minHeight="100"
+                    maxHeight="100">
+
                 <Label fx:id="day7Temp"
                        alignment="CENTER"
                        text="Unavailable"
@@ -268,17 +652,81 @@
                        style="-fx-font: 24 calibre;"
                 />
             </VBox>
-            <GridPane hgap="5.0" vgap="5.0">
-                <Label text="Min Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="0" textAlignment="RIGHT"/>
-                <Label text="Max Temperature:" GridPane.columnIndex="0" GridPane.rowIndex="1" textAlignment="RIGHT"/>
-                <Label text="Min Rain:" GridPane.columnIndex="0" GridPane.rowIndex="2" textAlignment="RIGHT"/>
-                <Label text="Max Rain:" GridPane.columnIndex="0" GridPane.rowIndex="3" textAlignment="RIGHT"/>
-                <Label fx:id="day7MinTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
-                <Label fx:id="day7MaxTemp" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-                <Label fx:id="day7MinRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-                <Label fx:id="day7MaxRain" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
-                <Button fx:id="nextButton7" text="working!" onAction="#onWorkingButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
-            </GridPane>
+            <HBox>
+                <VBox GridPane.columnIndex="0"
+                      GridPane.rowIndex="0"
+                      style="-fx-background-color: aqua;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day7MinTemp"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+                </VBox>
+                <VBox GridPane.columnIndex="1"
+                      GridPane.rowIndex="0"
+                      style="-fx-background-color: red;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day7MaxTemp"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+                </VBox>
+            </HBox>
+            <VBox   alignment="CENTER"
+                    spacing="0.0"
+                    style="-fx-background-color: lightblue;"
+                    minWidth="150"
+                    maxWidth="150"
+                    minHeight="100"
+                    maxHeight="100">
+
+                <Label fx:id="day7RainChance"
+                       alignment="CENTER"
+                       text="Unavailable"
+                       wrapText="true"
+                       style="-fx-font: 24 calibre;"
+                />
+            </VBox>
+            <HBox>
+                <VBox style="-fx-background-color: aqua;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day7MinRain"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+                </VBox>
+                <VBox style="-fx-background-color: red;"
+                      alignment="CENTER"
+                      minWidth="75"
+                      maxWidth="75"
+                      minHeight="50"
+                      maxHeight="50">
+                    <Label fx:id="day7MaxRain"
+                           text="N/A"
+                           textAlignment="CENTER"
+                           style="-fx-font: 18 calibre;"/>
+
+                </VBox>
+            </HBox>
+            <VBox>
+                <Label fx:id="day7AdvancedDetails"
+                       alignment="CENTER"
+                       text="Unavailable"
+                       wrapText="true"
+                       style="-fx-font: 12 calibre;"/>
+            </VBox>
         </VBox>
     </HBox>
     <VBox alignment="CENTER"
