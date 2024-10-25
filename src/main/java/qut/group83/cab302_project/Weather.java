@@ -80,7 +80,7 @@ public class Weather {
                 "}\n" +
                 data[6].extended_text;
 
-                if(data.length > 7){
+                if(data.length == 8){
                     outputString += "\nSet7{" +
                             "forecastDate=" + "$" + data[7].date + "$" +
                             ",minimumRain=" + "$" + data[7].rain.amount.min + "$" +
@@ -94,11 +94,12 @@ public class Weather {
                 else
                 {
                     outputString += "\nSet7{" +
-                            "forecastDate=" + null +
-                            ",minimumRain=" + null +
-                            ",maximumRain=" + null +
-                            ",minimumTemperature=" + null +
-                            ",maximumTemperature=" + null +
+                            "forecastDate=" + "$" + null + "$" +
+                            ",minimumRain=" + "$" + null + "$" +
+                            ",maximumRain=" + "$" + null + "$" +
+                            ",minimumTemperature=" + "$" + null + "$" +
+                            ",maximumTemperature=" + "$" + null + "$" +
+                            ",rainChance=" + "$" + null + "$" +
                             "}\n" +
                             null;
                 }

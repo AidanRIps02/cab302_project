@@ -179,7 +179,7 @@ public class MainController {
         //ALICE SPRINGS qgz1nj
         //SIMPSON DESERT r50z9g
 
-        APIuser = fetcher.fetchCurrentWeatherForecast("r50z9g");
+        APIuser = fetcher.fetchCurrentWeatherForecast("qgz1nj");
         //System.out.println(APIuser);
 
         String outputString = APIuser.toString();
@@ -188,7 +188,7 @@ public class MainController {
         {
             //System.out.println(outputStringSplit[i]);
         }
-        System.out.println(outputStringSplit[14]);
+        System.out.println(outputStringSplit.length);
         String metaData = outputStringSplit[0];
 
         String set1[] = outputStringSplit[1].split("\\$");
@@ -299,6 +299,8 @@ public class MainController {
             day4AdvancedDetails.setText(outputStringSplit[8]);
         }
 
+        System.out.println(outputStringSplit[8]);
+
         String set5[] = outputStringSplit[9].split("\\$");
         String set5Date = set5[1];
         String set5MinRain = set5[3];
@@ -353,9 +355,9 @@ public class MainController {
             day6AdvancedDetails.setText(outputStringSplit[12]);
         }
 
+        metaDataText.setText(metaData);
 
-
-        if(outputStringSplit.length >= 14){
+        if(outputStringSplit.length == 14){
             String set7[] = outputStringSplit[13].split("\\$");
             String set7Date = set7[1];
             String set7MinRain = set7[3];
@@ -385,24 +387,22 @@ public class MainController {
         }
 
 
-        String set1Extended = outputStringSplit[2];
-        String set2Extended = outputStringSplit[4];
-        String set3Extended = outputStringSplit[6];
-        String set4Extended = outputStringSplit[8];
-        String set5Extended = outputStringSplit[10];
-        String set6Extended = outputStringSplit[12];
-        if(outputStringSplit.length == 14){
-            String set7Extended = outputStringSplit[14];
-        }
+//        String set1Extended = outputStringSplit[2];
+//        String set2Extended = outputStringSplit[4];
+//        String set3Extended = outputStringSplit[6];
+//        String set4Extended = outputStringSplit[8];
+//        String set5Extended = outputStringSplit[10];
+//        String set6Extended = outputStringSplit[12];
+//        if(outputStringSplit.length == 14){
+//            String set7Extended = outputStringSplit[14];
+//        }
 
-        System.out.println(outputStringSplit[12].getClass());
-        System.out.println(outputStringSplit.length);
 
 
 
 
 
         //welcomeText7.setText(APIuser.toString());
-        metaDataText.setText(metaData);
+
     }
 }

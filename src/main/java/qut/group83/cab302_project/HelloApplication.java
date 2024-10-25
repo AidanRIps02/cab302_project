@@ -50,6 +50,5 @@ public class HelloApplication extends Application {
         //SIMPSON DESERT r50z9g
 
         APIuser = fetcher.fetchCurrentWeatherForecast("qgz1nj");
-        System.out.println(APIuser);
     }
 }

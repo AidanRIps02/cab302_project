@@ -13,7 +13,8 @@
       xmlns="http://javafx.com/javafx"
       fx:controller="qut.group83.cab302_project.MainController"
       alignment="CENTER"
-      spacing="20">
+      spacing="20"
+      style="-fx-background-color: deepskyblue;">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
