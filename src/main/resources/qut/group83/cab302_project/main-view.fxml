@@ -32,7 +32,7 @@
         <VBox alignment="TOP_CENTER"
               spacing="0.0"
               fx:id="day1"
-              style="-fx-background-color: lightgray;"
+              style="-fx-background-color: lightskyblue;"
               minWidth="150"
               maxWidth="150">
             <padding>
@@ -132,7 +132,7 @@
         <VBox alignment="TOP_CENTER"
               spacing="0.0"
               fx:id="day2"
-              style="-fx-background-color: lightgray;"
+              style="-fx-background-color: lightskyblue;"
               minWidth="150"
               maxWidth="150">
             <padding>
@@ -232,7 +232,7 @@
         <VBox alignment="TOP_CENTER"
               spacing="0.0"
               fx:id="day3"
-              style="-fx-background-color: lightgray;"
+              style="-fx-background-color: lightskyblue;"
               minWidth="150"
               maxWidth="150">
             <padding>
@@ -332,7 +332,7 @@
         <VBox alignment="TOP_CENTER"
               spacing="0.0"
               fx:id="day4"
-              style="-fx-background-color: lightgray;"
+              style="-fx-background-color: lightskyblue;"
               minWidth="150"
               maxWidth="150">
             <padding>
@@ -432,7 +432,7 @@
         <VBox alignment="TOP_CENTER"
               spacing="0.0"
               fx:id="day5"
-              style="-fx-background-color: lightgray;"
+              style="-fx-background-color: lightskyblue;"
               minWidth="150"
               maxWidth="150">
             <padding>
@@ -532,7 +532,7 @@
         <VBox alignment="TOP_CENTER"
               spacing="0.0"
               fx:id="day6"
-              style="-fx-background-color: lightgray;"
+              style="-fx-background-color: lightskyblue;"
               minWidth="150"
               maxWidth="150">
             <padding>
@@ -632,7 +632,7 @@
         <VBox alignment="TOP_CENTER"
               spacing="0.0"
               fx:id="day7"
-              style="-fx-background-color: lightgray;"
+              style="-fx-background-color: lightskyblue;"
               minWidth="150"
               maxWidth="150">
             <padding>
