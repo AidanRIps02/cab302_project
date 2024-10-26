@@ -16,7 +16,10 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class RegisterPage {
+    private UserDAO userDAO;
+
     public RegisterPage(Stage primaryStage) {
+        userDAO = new UserDAO(); // Initialize the DAO
         // Left side - Logo and Title
         VBox leftPane = new VBox();
         leftPane.setAlignment(Pos.CENTER); // Center the text vertically and horizontally
@@ -53,10 +56,22 @@ public class RegisterPage {
         // register button
         Button submitButton = new Button("Signup");
         submitButton.setStyle("-fx-background-color: #1E90FF; -fx-text-fill: white;");
+        // Implement signup logic
+        submitButton.setOnAction(e -> {
+            String username = usernameField.getText();
+            String password = passwordField.getText();
+
+            User newUser = new User(username, password);
+            userDAO.insert(newUser);
+
+            System.out.println("User registered successfully!");
+            // Optionally navigate to the login screen
+            new LoginScreen(primaryStage);
+        });
 
         // back link
-        Label BackLabel = new Label("Already have a account");
-        Button BackButton = new Button("BACK!");
+        Label BackLabel = new Label("Already have an account?");
+        Button BackButton = new Button("Login");
         BackButton.setStyle("-fx-background-color: transparent; -fx-text-fill: blue; -fx-underline: true;");
 
         HBox BackBox = new HBox(5, BackLabel, BackButton);
@@ -81,7 +96,6 @@ public class RegisterPage {
 
 
 
-
         /////////////////////////////////
 //        VBox root = new VBox(10);
 //
@@ -97,10 +111,10 @@ public class RegisterPage {
 //                passwordField,
 //                submitButton );
 
-        submitButton.setOnAction(e -> {
-            // Here you can add your registration logic
-            primaryStage.setScene(primaryStage.getScene()); // Optionally navigate back or elsewhere
-        });
+//        submitButton.setOnAction(e -> {
+//            // Here you can add your registration logic
+//            primaryStage.setScene(primaryStage.getScene()); // Optionally navigate back or elsewhere
+//        });
         // Navigate to sign-up page
         BackButton.setOnAction(e -> new LoginScreen(primaryStage));
 

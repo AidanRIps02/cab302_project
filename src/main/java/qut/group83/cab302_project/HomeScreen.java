@@ -21,20 +21,20 @@ public class HomeScreen {
         VBox pane = new VBox();
         pane.setAlignment(Pos.CENTER); // Center the text vertically and horizontally
         pane.setPadding(new Insets(20)); // Reduce padding for better control
-        pane.setStyle("-fx-background-color: #1E90FF;"); // Blue color
+        pane.setStyle("-fx-background-color: #87CEFA;"); // Blue color
 
         // Set a preferred size for the VBox to prevent it from overflowing
         pane.setPrefWidth(600); // Set a reasonable width for the left pane
         pane.setPrefHeight(400); // Set height based on your window size
 
         // Title (Text node)
-        Text title = new Text("Welcome to the Weather Forecast Tracker\n");
+        Text title = new Text("Welcome to the Weather Forecast Tracker\n\n                         GET START!\n");
         title.setFont(Font.font("Arial", FontWeight.BOLD, 28)); // Set font size and weight
         title.setFill(Color.WHITE); // Set text color to black
 
         // Login button
         Button LoginButton = new Button("  Login   ");
-        LoginButton.setStyle("-fx-background-color: #0000ff; -fx-text-fill: white; -fx-font-size: 18px; "
+        LoginButton.setStyle("-fx-background-color: #1E90FF; -fx-text-fill: white; -fx-font-size: 18px; "
                                + "-fx-padding: 10px 50px; -fx-border-radius: 10; -fx-background-radius: 10;");
 
         //space
@@ -42,7 +42,7 @@ public class HomeScreen {
 
         // Signup button
         Button SignupButton = new Button(" Signup ");
-        SignupButton.setStyle("-fx-background-color: #0000ff; -fx-text-fill: white; -fx-font-size: 18px; "
+        SignupButton.setStyle("-fx-background-color: #1E90FF; -fx-text-fill: white; -fx-font-size: 18px; "
                                 + "-fx-padding: 10px 50px; -fx-border-radius: 10; -fx-background-radius: 10;");
 
 

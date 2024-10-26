@@ -59,7 +59,7 @@ public class Alertpage {
         // Create scene and add layout
         Scene scene = new Scene(layout, 600, 400);
         primaryStage.setScene(scene);
-        primaryStage.setTitle("Alertpage - Weather Forest Tracker");
+        primaryStage.setTitle("Alarm page - Weather Forest Tracker");
         primaryStage.show();
 
     }

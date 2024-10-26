@@ -16,27 +16,30 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class LoginScreen {
+    private UserDAO userDAO;
+
     public LoginScreen(Stage primaryStage) {
+        userDAO = new UserDAO(); // Initialize the DAO
         // Left side - Logo and Title
         VBox leftPane = new VBox();
         leftPane.setAlignment(Pos.CENTER); // Center the text vertically and horizontally
         leftPane.setPadding(new Insets(20)); // Reduce padding for better control
         leftPane.setStyle("-fx-background-color: #1E90FF;"); // Blue color
 
-    // Set a preferred size for the VBox to prevent it from overflowing
+        // Set a preferred size for the VBox to prevent it from overflowing
         leftPane.setPrefWidth(350); // Set a reasonable width for the left pane
         leftPane.setPrefHeight(400); // Set height based on your window size
 
-    // Title (Text node)
+        // Title (Text node)
         Text title = new Text("Welcome Back!");
         title.setFont(Font.font("Arial", FontWeight.BOLD, 25)); // Set font size and weight
         title.setFill(Color.WHITE); // Set text color to black
-    //subtitle (Text node)
+        //subtitle (Text node)
         Text subtitle = new Text("Login to your account ");
         subtitle.setFont(Font.font("Arial", FontWeight.BOLD, 25)); // Set font size and weight
         subtitle.setFill(Color.WHITE); // Set text color to black
 
-    // Add the title and subtitle to the leftPane
+        // Add the title and subtitle to the leftPane
         leftPane.getChildren().addAll(title, subtitle);
 
         // Right side - Login Form
@@ -57,10 +60,25 @@ public class LoginScreen {
         // Login button
         Button loginButton = new Button("Login");
         loginButton.setStyle("-fx-background-color: #1E90FF; -fx-text-fill: white;");
+        // Implement login logic
+        loginButton.setOnAction(e -> {
+            String username = usernameField.getText();
+            String password = passwordField.getText();
+
+            User user = userDAO.getByUsernameAndPassword(username, password);
+
+            if (user != null) {
+                System.out.println("Login successful!");
+                // Navigate to the next page
+                new Alertpage(primaryStage);
+            } else {
+                System.out.println("Invalid username or password.");
+            }
+        });
 
         // Signup link
-        Label signUpLabel = new Label("            Not a user?         ");
-        Button signUpButton = new Button("Sign up!");
+        Label signUpLabel = new Label(" Don't have an account?");
+        Button signUpButton = new Button("Sign up");
         signUpButton.setStyle("-fx-background-color: transparent; -fx-text-fill: blue; -fx-underline: true;");
 
         HBox signUpBox = new HBox(5, signUpLabel, signUpButton);
@@ -83,24 +101,24 @@ public class LoginScreen {
         primaryStage.setTitle("Login - Weather Forest Tracker");
         primaryStage.show();
 
-        // Implement login logic
-        loginButton.setOnAction(e -> {
-            if (validateLogin(usernameField.getText(), passwordField.getText())) {
-                new Alertpage(primaryStage); // Navigate to the home page on successful login
-            } else {
-                Label loginFailedLabel = new Label("Login Failed: Invalid username or password");
-                if (!root.getChildren().contains(loginFailedLabel)) {
-                    root.getChildren().add(loginFailedLabel);
-                }
-            }
-        });
-
-        // Navigate to sign-up page
         signUpButton.setOnAction(e -> new RegisterPage(primaryStage));
     }
-
-    private boolean validateLogin(String username, String password) {
-        // Placeholder for actual authentication logic
-        return "user".equals(username) && "pass".equals(password);
-    }
 }
+//        loginButton.setOnAction(e -> {
+//            if (validateLogin(usernameField.getText(), passwordField.getText())) {
+//                new Alertpage(primaryStage); // Navigate to the home page on successful login
+//            } else {
+//                Label loginFailedLabel = new Label("Login Failed: Invalid username or password");
+//                if (!root.getChildren().contains(loginFailedLabel)) {
+//                    root.getChildren().add(loginFailedLabel);
+//                }
+//            }
+//        });
+
+        // Navigate to sign-up page
+
+
+//    private boolean validateLogin(String username, String password) {
+//        // Placeholder for actual authentication logic
+//        return "user".equals(username) && "pass".equals(password);
+//    }
