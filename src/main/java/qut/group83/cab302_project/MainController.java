@@ -239,10 +239,10 @@ public class MainController {
         day2Temp.setText(day2TempValue);
         day2Temp.setStyle("-fx-font: 72 calibre;");
 
-        day2MinRain.setText(set2MinRain);
-        day2MaxRain.setText(set2MaxRain);
-        day2MinTemp.setText(set2MinTemp);
-        day2MaxTemp.setText(set2MaxTemp);
+        day2MinRain.setText(set2MinRain + "mm");
+        day2MaxRain.setText(set2MaxRain + "mm");
+        day2MinTemp.setText(set2MinTemp + "°");
+        day2MaxTemp.setText(set2MaxTemp + "°");
 
         day2RainChance.setText(set1RainChance + "%");
         day2RainChance.setStyle("-fx-font: 72 calibre;");
@@ -266,10 +266,10 @@ public class MainController {
         day3Temp.setText(day3TempValue);
         day3Temp.setStyle("-fx-font: 72 calibre;");
 
-        day3MinRain.setText(set3MinRain);
-        day3MaxRain.setText(set3MaxRain);
-        day3MinTemp.setText(set3MinTemp);
-        day3MaxTemp.setText(set3MaxTemp);
+        day3MinRain.setText(set3MinRain + "mm");
+        day3MaxRain.setText(set3MaxRain + "mm");
+        day3MinTemp.setText(set3MinTemp + "°");
+        day3MaxTemp.setText(set3MaxTemp + "°");
 
         day3RainChance.setText(set1RainChance + "%");
         day3RainChance.setStyle("-fx-font: 72 calibre;");
@@ -293,10 +293,10 @@ public class MainController {
         day4Temp.setText(day4TempValue);
         day4Temp.setStyle("-fx-font: 72 calibre;");
 
-        day4MinRain.setText(set4MinRain);
-        day4MaxRain.setText(set4MaxRain);
-        day4MinTemp.setText(set4MinTemp);
-        day4MaxTemp.setText(set4MaxTemp);
+        day4MinRain.setText(set4MinRain + "mm");
+        day4MaxRain.setText(set4MaxRain + "mm");
+        day4MinTemp.setText(set4MinTemp + "°");
+        day4MaxTemp.setText(set4MaxTemp + "°");
 
         day4RainChance.setText(set1RainChance + "%");
         day4RainChance.setStyle("-fx-font: 72 calibre;");
@@ -322,10 +322,10 @@ public class MainController {
         day5Temp.setText(day5TempValue);
         day5Temp.setStyle("-fx-font: 72 calibre;");
 
-        day5MinRain.setText(set5MinRain);
-        day5MaxRain.setText(set5MaxRain);
-        day5MinTemp.setText(set5MinTemp);
-        day5MaxTemp.setText(set5MaxTemp);
+        day5MinRain.setText(set5MinRain + "mm");
+        day5MaxRain.setText(set5MaxRain + "mm");
+        day5MinTemp.setText(set5MinTemp + "°");
+        day5MaxTemp.setText(set5MaxTemp + "°");
 
         day5RainChance.setText(set1RainChance + "%");
         day5RainChance.setStyle("-fx-font: 72 calibre;");
@@ -349,10 +349,10 @@ public class MainController {
         day6Temp.setText(day6TempValue);
         day6Temp.setStyle("-fx-font: 72 calibre;");
 
-        day6MinRain.setText(set6MinRain);
-        day6MaxRain.setText(set6MaxRain);
-        day6MinTemp.setText(set6MinTemp);
-        day6MaxTemp.setText(set6MaxTemp);
+        day6MinRain.setText(set6MinRain + "mm");
+        day6MaxRain.setText(set6MaxRain + "mm");
+        day6MinTemp.setText(set6MinTemp + "°");
+        day6MaxTemp.setText(set6MaxTemp + "°");
 
         day6RainChance.setText(set1RainChance + "%");
         day6RainChance.setStyle("-fx-font: 72 calibre;");
@@ -379,10 +379,10 @@ public class MainController {
             day7Temp.setText(day7TempValue);
             day7Temp.setStyle("-fx-font: 72 calibre;");
 
-            day7MinRain.setText(set7MinRain);
-            day7MaxRain.setText(set7MaxRain);
-            day7MinTemp.setText(set7MinTemp);
-            day7MaxTemp.setText(set7MaxTemp);
+            day7MinRain.setText(set7MinRain + "mm");
+            day7MaxRain.setText(set7MaxRain + "mm");
+            day7MinTemp.setText(set7MinTemp + "°");
+            day7MaxTemp.setText(set7MaxTemp + "°");
 
             day7RainChance.setText(set1RainChance + "%");
             day7RainChance.setStyle("-fx-font: 72 calibre;");
