@@ -101,6 +101,12 @@ public class LoginScreen {
         primaryStage.setTitle("Login - Weather Forest Tracker");
         primaryStage.show();
 
+        private boolean validateLogin(String username, String password) {
+            // Placeholder for actual authentication logic
+            return "user".equals(username) && "pass".equals(password);
+        }
+
+        // Navigate to sign-up page
         signUpButton.setOnAction(e -> new RegisterPage(primaryStage));
     }
 }
@@ -118,7 +124,3 @@ public class LoginScreen {
         // Navigate to sign-up page
 
 
-//    private boolean validateLogin(String username, String password) {
-//        // Placeholder for actual authentication logic
-//        return "user".equals(username) && "pass".equals(password);
-//    }
