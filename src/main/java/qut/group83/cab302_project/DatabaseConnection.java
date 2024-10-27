@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class DatabaseConnection {
 
     // URL user database
-    private static final String DB_Users = "jdbc:sqlite:database.db";
+    private static final String DB_Users = "jdbc:sqlite:fdatabase.db";
 
     private static Connection instance = null;
 
