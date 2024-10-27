@@ -14,6 +14,10 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import java.sql.Connection;
+import javafx.fxml.FXMLLoader;
+import java.io.IOException;
+
 
 public class LoginScreen {
     private UserDAO userDAO;
@@ -64,7 +68,6 @@ public class LoginScreen {
         loginButton.setOnAction(e -> {
             String username = usernameField.getText();
             String password = passwordField.getText();
-
             User user = userDAO.getByUsernameAndPassword(username, password);
 
             if (user != null) {
@@ -121,6 +124,6 @@ public class LoginScreen {
 //            }
 //        });
 
-        // Navigate to sign-up page
+
 
 

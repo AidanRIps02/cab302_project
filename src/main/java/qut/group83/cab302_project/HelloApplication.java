@@ -26,7 +26,7 @@ public class HelloApplication extends Application {
         userDAO.createTable();
 
         //insert new user
-        userDAO.insert(new User("John", "John"));
+        userDAO.insert(new User("eddie", "John"));
 
         // Retrieve a user by username and password
         User user = userDAO.getByUsernameAndPassword("John", "John");
