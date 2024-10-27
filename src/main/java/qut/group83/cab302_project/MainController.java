@@ -1,6 +1,7 @@
 package qut.group83.cab302_project;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
@@ -23,6 +24,9 @@ public class MainController {
 
     @FXML
     private Label welcomeText1;
+
+    @FXML
+    private ComboBox locationBox;
 
     @FXML
     private Label day1Temp;
@@ -179,7 +183,12 @@ public class MainController {
         //ALICE SPRINGS qgz1nj
         //SIMPSON DESERT r50z9g
 
-        APIuser = fetcher.fetchCurrentWeatherForecast("qgz1nj");
+        String currentLocation = locationBox.getValue().toString();
+        System.out.println(currentLocation);
+
+        String currentLocationSplit[] =  currentLocation.split("-");
+
+        APIuser = fetcher.fetchCurrentWeatherForecast(currentLocationSplit[1]);
         //System.out.println(APIuser);
 
         String outputString = APIuser.toString();
